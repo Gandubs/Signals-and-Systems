@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  3 JAN 2024 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  3 JAN 2024 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**a1.tex
+**a1
 (./a1.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
@@ -1291,14 +1291,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--132
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 127--132
-\OT1/txr/bx/n/12 Extension\OT1/txr/m/n/12 : It is told to re-place $\OML/txmi/m
-/it/12 S[]$ \OT1/txr/m/n/12 with
- []
-
-
-Underfull \hbox (badness 7558) in paragraph at lines 127--132
-\OT1/txr/m/n/12 x(n) and there-fore cal-cu-late X(Z). The
+Underfull \hbox (badness 1824) in paragraph at lines 127--132
+\OT1/txr/bx/n/12 Extension - 1\OT1/txr/m/n/12 : It is told to re-place $\OML/tx
+mi/m/it/12 S[]$
  []
 
 
@@ -1400,40 +1395,96 @@ l.160
 <inserted text> 
                 $
 l.161 ...)^{2}}+\dfrac{-3(75)}{2(Z-1)Z^{75}}}{Z-1}
-                                                  
+                                                  \\
 ? 
 ! Extra }, or forgotten $.
 \@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
                                                   
 l.161 ...)^{2}}+\dfrac{-3(75)}{2(Z-1)Z^{75}}}{Z-1}
-                                                  
+                                                  \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.162 
+l.165 
       
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.162 
+l.165 
       
 ? 
-[2
+! Missing $ inserted.
+<inserted text> 
+                $
+l.167 x(n) = 7 + (n-1)\dfrac{7}{2}
+                                  \\
+? 
+! Extra }, or forgotten $.
+\@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
+                                                  
+l.167 x(n) = 7 + (n-1)\dfrac{7}{2}
+                                  \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.168 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.168 
+      
+? 
 
-] (./a1.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.177 ...convergent $\forall$ z $\epsilon$(-\infty
+                                                  ,-1)U(1,\infty)
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.179 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.179 
+      
+? 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.179 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+[2] (./a1.aux)
 Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 29544 strings out of 478287
- 582095 string characters out of 5849290
+ 29547 strings out of 478287
+ 582134 string characters out of 5849290
  850836 words of memory out of 5000000
  47092 multiletter control sequences out of 15000+600000
  537318 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,12n,96p,406b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,12n,96p,402b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1442,10 +1493,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a1.pdf (2 pages, 53837 bytes).
+Output written on a1.pdf (2 pages, 57100 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
