@@ -95,38 +95,25 @@ We now use this result for calculating $S_{23}$
     S_{23} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
     \end{align}
 Again, solving this yields $S_{23}$ as 1046.5\\\\
+For the $n^{th}$ term of (i) bit , we are now required to calculate X(z) given that $n^{th}$ term is x(n)\\
+x(n) = 7 + (n-1)\dfrac{7}{2}\\
 
-\item[(ii)]
-
-\vspace{0.5cm}
-Based on the analysis of the previous bit, we observe that in this bit \\ a=34 , d=-2
-For calculating the number of terms, we use the formula (\eqref{eq:2}\\
-Substituting the values, we get
+Now , putting this x(n) in $\eqref{eq:3}$ , we obtain (Starting n from 0 as it cannot be negative for a series)\\
 \begin{align}
-     10 = 34 + (n-1)(-2)
-     \end{align}
-Solving this yields n=13\\
-For calculating the sum , we use \eqref{eq:1}
-\begin{align}
- S_{13} = \dfrac{13}{2}(64+11(-2))
- \end{align}
-
- Solving this, we get $S_n$= 286.\\\\
-
-\item[(iii)]  
-\vspace{0.5cm}
-By using the previous analysis, we can conclude that a=-5, d=-3\\
-Again, for n , we use the formula \eqref{eq:2}
-\begin{align}
--230= -5+(n-1)(-3)
+     \sum_{n=1}^{\infty}(7 + (n-1)\dfrac{7}{2})Z^{-n} =X(z)
 \end{align}
-Solving this yields n=76\\
-Now, for the sum we use equation \eqref{eq:1} :\\
 \begin{align}
-    S_{76}=\dfrac{76}{2}(-10+(76-1)(-3))
-    \end{align}
-Solving this we obtain $S_{76}$=-8930.\\\\
-\textbf{Extension - 1}:
+\sum_{n=1}^{\infty}(\dfrac{7}{2} + \dfrac{7n}{2})Z^{-n} =X(z)
+\end{align}
+For the \textbf{region of convergence}\\
+X(z) = convergent $\forall$ z $\epsilon$(-\infty,-1)U(1,\infty)
+\\
+
+This can be proved from ratio test . \\
+We now calculate the sum using the formula for gp and agp(Assuming k terms), we obtain.\\
+\begin{align}
+    \dfrac{7}{2}\dfrac{1-z^k}{z^k(1-z)}+\dfrac{7(z^k-1)z}{2z^k(z-1)^2}-\dfrac{7kz}{2z^{k+1}(z-1)}=X(z)
+\end{align}
 It is told to replace $S_n$ with x(n) and therefore calculate X(Z). The equation $\eqref{eq:1}$ and calculate the general form of X(Z) .
 It is known that\\
 \begin{align}
@@ -153,35 +140,47 @@ Calculating the individual sums, we get
 \begin{align}
 \dfrac{(a-\dfrac{d}{2})Z^{1-k}\dfrac{(Z^{k}-1)}{Z-1}+\dfrac{d}{2Z^{k-2}}\dfrac{Z^{k-1}-1}{2(Z-1)^{2}}-\dfrac{d(k-1)}{2(Z-1)Z^{k-1}}}{Z-1}\\ \notag=X(Z)
 \end{align}
-Now if we put the values of (i),(ii) and (iii) , we get the respective X(Z) as :\\
- \item \dfrac{(\dfrac{21}{4})Z^{-22}\dfrac{(Z^{23}-1)}{Z-1}+\dfrac{7}{4Z^{21}}\dfrac{Z^{22}-1}{2(Z-1)^{2}}-\dfrac{7(22)}{4(Z-1)Z^{22}}}{Z-1} \\\\
- 
- \item \dfrac{35Z^{-12}\dfrac{(Z^{13}-1)}{Z-1}-\dfrac{1}{Z^{11}}\dfrac{Z^{12}-1}{2(Z-1)^{2}}+\dfrac{2(12)}{(Z-1)Z^{12}}}{Z-1} \\\\
- 
+\item \dfrac{(\dfrac{21}{4})Z^{-22}\dfrac{(Z^{23}-1)}{Z-1}+\dfrac{7}{4Z^{21}}\dfrac{Z^{22}-1}{2(Z-1)^{2}}-\dfrac{7(22)}{4(Z-1)Z^{22}}}{Z-1} \\\\
+
+
+
+
+
+
+
+\item[(ii)]
+\vspace{0.5cm}
+Based on the analysis of the previous bit, we observe that in this bit \\ a=34 , d=-2
+For calculating the number of terms, we use the formula (\eqref{eq:2}\\
+Substituting the values, we get
+\begin{align}
+     10 = 34 + (n-1)(-2)
+     \end{align}
+Solving this yields n=13\\
+For calculating the sum , we use \eqref{eq:1}
+\begin{align}
+ S_{13} = \dfrac{13}{2}(64+11(-2))
+ \end{align}
+ Solving this, we get $S_n$= 286.\\\\
+ Using the equation(12) , we obtain X(Z) as:
+  \item \dfrac{35Z^{-12}\dfrac{(Z^{13}-1)}{Z-1}-\dfrac{1}{Z^{11}}\dfrac{Z^{12}-1}{2(Z-1)^{2}}+\dfrac{2(12)}{(Z-1)Z^{12}}}{Z-1} \\\\
+
+\item[(iii)]  
+\vspace{0.5cm}
+By using the previous analysis, we can conclude that a=-5, d=-3\\
+Again, for n , we use the formula \eqref{eq:2}
+\begin{align}
+-230= -5+(n-1)(-3)
+\end{align}
+Solving this yields n=76\\
+Now, for the sum we use equation \eqref{eq:1} :\\
+\begin{align}
+    S_{76}=\dfrac{76}{2}(-10+(76-1)(-3))
+    \end{align}
+Solving this we obtain $S_{76}$=-8930.\\\\
+ Using the equation(12) , we obtain X(Z) as:
  \item \dfrac{(\dfrac{7}{2})Z^{-75}\dfrac{(Z^{76}-1)}{Z-1}-\dfrac{-3}{2Z^{74}}\dfrac{Z^{75}-1}{2(Z-1)^{2}}+\dfrac{-3(75)}{2(Z-1)Z^{75}}}{Z-1}\\
-\\
-\textbf{Extension - 2}:
-\\
 
-For the $n^{th}$ term of (i) bit , we are now required to calculate X(z) given that $n^{th}$ term is x(n)\\
-x(n) = 7 + (n-1)\dfrac{7}{2}\\
-
-Now , putting this x(n) in $\eqref{eq:3}$ , we obtain (Starting n from 0 as it cannot be negative for a series)\\
-\begin{align}
-     \sum_{n=1}^{\infty}(7 + (n-1)\dfrac{7}{2})Z^{-n} =X(z)
-\end{align}
-\begin{align}
-\sum_{n=1}^{\infty}(\dfrac{7}{2} + \dfrac{7n}{2})Z^{-n} =X(z)
-\end{align}
-For the \textbf{region of convergence}\\
-X(z) = convergent $\forall$ z $\epsilon$(-\infty,-1)U(1,\infty)
-\\
-
-This can be proved from ratio test . \\
-We now calculate the sum using the formula for gp and agp(Assuming k terms), we obtain.\\
-\begin{align}
-    \dfrac{7}{2}\dfrac{1-z^k}{z^k(1-z)}+\dfrac{7(z^k-1)z}{2z^k(z-1)^2}-\dfrac{7kz}{2z^{k+1}(z-1)}=X(z)
-\end{align}
 
  
 
