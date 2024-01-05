@@ -95,15 +95,20 @@ We now use this result for calculating $S_{23}$
     S_{23} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
     \end{align}
 Again, solving this yields $S_{23}$ as 1046.5\\\\
-For the $n^{th}$ term of (i) bit , we are now required to calculate X(z) given that $n^{th}$ term is x(n)\\
-x(n) = 7 + (n-1)\dfrac{7}{2}\\
+For the $n^{th}$ term of (i) bit , we are now required to calculate X(z) given that ($T^{th}$)*u$_{(n)}$ is x(n) \forall n \neq 0, where u$_{(n)}$ is the unit step function. We take x(0) to be 0.\\
+x(n) = u$_{(n)}$(7 + (n-1)\dfrac{7}{2})\\
 
-Now , putting this x(n) in $\eqref{eq:3}$ , we obtain (Starting n from 0 as it cannot be negative for a series)\\
+The graph of x(n) vs n is shown below.\\
+\graphicspath{ {pictures/} }
+\includegraphics[width=10.cm, height=6cm]{Figure_1}
+
+
+Now , putting this x(n) in $\eqref{eq:3}$ , we obtain \\
 \begin{align}
-     \sum_{n=1}^{\infty}(7 + (n-1)\dfrac{7}{2})Z^{-n} =X(z)
+     \sum_{n=-\infty}^{\infty}(7 + (n-1)\dfrac{7}{2})u_{(n)}Z^{-n} =X(z)
 \end{align}
 \begin{align}
-\sum_{n=1}^{\infty}(\dfrac{7}{2} + \dfrac{7n}{2})Z^{-n} =X(z)
+\sum_{n=-\infty}^{\infty}(\dfrac{7}{2} + \dfrac{7n}{2})u_{(n)}Z^{-n} =X(z)
 \end{align}
 For the \textbf{region of convergence}\\
 X(z) = convergent $\forall$ z $\epsilon$(-\infty,-1)U(1,\infty)
@@ -111,36 +116,48 @@ X(z) = convergent $\forall$ z $\epsilon$(-\infty,-1)U(1,\infty)
 
 This can be proved from ratio test . \\
 We now calculate the sum using the formula for gp and agp(Assuming k terms), we obtain.\\
+
 \begin{align}
-    \dfrac{7}{2}\dfrac{1-z^k}{z^k(1-z)}+\dfrac{7(z^k-1)z}{2z^k(z-1)^2}-\dfrac{7kz}{2z^{k+1}(z-1)}=X(z)
+   \notag \dfrac{7}{2}(1-z^k)(z^k(1-z))^{-1}+
+   \\ \notag(7(z^k-1)z)(2z^k(z-1)^2)^{-1}-\\ (7kz)(2z^{k+1}(z-1))^{-1}=X(z)
 \end{align}
-It is told to replace $S_n$ with x(n) and therefore calculate X(Z). The equation $\eqref{eq:1}$ and calculate the general form of X(Z) .
+Below is the graph of X(z) vs z\\
+
+\graphicspath{ {pictures/} }
+\includegraphics[width=9cm, height=6cm]{Figure_2}
+
+It is told to replace $S_n$*u$_{(n-1)}$ with x(n) \\and therefore calculate X(Z). The equation $\eqref{eq:1}$ and calculate the general form of X(Z) .
 It is known that\\
 \begin{align}
  \sum_{n=-\infty}^{\infty} Z^{-n}x(n) = X(Z)\label{eq:3}
  \end{align}
-For n$\epsilon$[-\infty,0] 
 
-The summation is 0 in the above question. So we can start the sum from n=1 and so on...
 Putting the equation $\eqref{eq:1}$ in $\eqref{eq:3}$\\
 \begin{align}
-    \sum_{n=1}^{\infty} Z^{-n}\dfrac{n}{2}(2a + (n-1)d) = X(Z) \label{eq:4}
+    \sum_{n=-\infty}^{\infty} u_{(n)}Z^{-n}\dfrac{n}{2}(2a + (n-1)d) = X(Z) \label{eq:4}
 \end{align}
 Writing another equation by multiplying $\eqref{eq:4}$ with Z, we get
 \begin{align}    
-\sum_{n=1}^{\infty} Z^{-n+1}\dfrac{n}{2}(2a + (n-1)d) = ZX(Z)\label{eq:5}
+\sum_{n=-\infty}^{\infty} u_{(n)}Z^{-n+1}\dfrac{n}{2}(2a + (n-1)d) = ZX(Z)\label{eq:5}
 \end{align}
-Now we subtract $\eqref{eq:4}$ from $\eqref{eq:5}$ by displacing it with one term , i.e we subtract the first term of $\eqref{eq:4}$ from the second term of $\eqref{eq:5}$ and so on.\\
+Now we subtract $\eqref{eq:4}$ from $\eqref{eq:5}$ by displacing it with one term , i.e we subtract the first term of $\eqref{eq:4}$ \\from the second term of $\eqref{eq:5}$ and so on.\\
 By simplifying this, we get
 \begin{align}
-    \sum_{n=0}^{\infty} (a-\dfrac{d}{2})Z^{-n}+\dfrac{n}{2}dZ^{-n} = ZX(Z)-X(Z)
+    \sum_{n=-\infty}^{\infty} (a-\dfrac{d}{2})u_{(n)}Z^{-n}+\dfrac{n}{2}dZ^{-n} = ZX(Z)-X(Z)
 \end{align}
 The first part is a GP and the second part is an AGP. Since the nature of Z is not known, we calculate the general sum for finite terms(Assuming k) and then use it for each bit.\\
 Calculating the individual sums, we get
 \begin{align}
-\dfrac{(a-\dfrac{d}{2})Z^{1-k}\dfrac{(Z^{k}-1)}{Z-1}+\dfrac{d}{2Z^{k-2}}\dfrac{Z^{k-1}-1}{2(Z-1)^{2}}-\dfrac{d(k-1)}{2(Z-1)Z^{k-1}}}{Z-1}\\ \notag=X(Z)
+\notag((a-\dfrac{d}{2})Z^{1-k}((Z^{k}-1))(Z-1)^{-1}+ \\ \notag (d)(2Z^{k-2})^{-1}(Z^{k-1}-1)^(2(Z-1)^{2})^{-1}-\\ \notag(d(k-1))(2(Z-1)Z^{k-1})^{-1})(Z-1)^{-1}\\ =X(Z)
 \end{align}
-\item \dfrac{(\dfrac{21}{4})Z^{-22}\dfrac{(Z^{23}-1)}{Z-1}+\dfrac{7}{4Z^{21}}\dfrac{Z^{22}-1}{2(Z-1)^{2}}-\dfrac{7(22)}{4(Z-1)Z^{22}}}{Z-1} \\\\
+By substituting the respective values of k,a,d we obtain the following:\\
+\item 
+\begin{align}
+    \notag X(Z)=((\dfrac{21}{4})Z^{-22}((Z^{23}-1))(Z-1)^{-1}+\\
+    \notag 7(4Z^{21})^{-1}(Z^{22}-1)(2(Z-1)^{2})^{-1}-\\
+     \notag(7(22))(4(Z-1)Z^{22})^{-1})(Z-1)^{-1} 
+\end{align}
+
 
 
 
@@ -162,8 +179,14 @@ For calculating the sum , we use \eqref{eq:1}
  S_{13} = \dfrac{13}{2}(64+11(-2))
  \end{align}
  Solving this, we get $S_n$= 286.\\\\
- Using the equation(12) , we obtain X(Z) as:
-  \item \dfrac{35Z^{-12}\dfrac{(Z^{13}-1)}{Z-1}-\dfrac{1}{Z^{11}}\dfrac{Z^{12}-1}{2(Z-1)^{2}}+\dfrac{2(12)}{(Z-1)Z^{12}}}{Z-1} \\\\
+ Using the equation(12) , we obtain X(Z) as:\\
+  \item 
+  \begin{align}      
+  \notag X(Z)= (35Z^{-12}((Z^{13}-1))(Z-1)^{-1}-\\
+  \notag (Z^{11})^{-1}(Z^{12}-1)(2(Z-1)^{2})^{-1}+\\
+  \notag (24)((Z-1)Z^{12})^{-1})(Z-1)^{-1}
+    \end{align}
+
 
 \item[(iii)]  
 \vspace{0.5cm}
@@ -178,8 +201,13 @@ Now, for the sum we use equation \eqref{eq:1} :\\
     S_{76}=\dfrac{76}{2}(-10+(76-1)(-3))
     \end{align}
 Solving this we obtain $S_{76}$=-8930.\\\\
- Using the equation(12) , we obtain X(Z) as:
- \item \dfrac{(\dfrac{7}{2})Z^{-75}\dfrac{(Z^{76}-1)}{Z-1}-\dfrac{-3}{2Z^{74}}\dfrac{Z^{75}-1}{2(Z-1)^{2}}+\dfrac{-3(75)}{2(Z-1)Z^{75}}}{Z-1}\\
+ Using the equation(12) , we obtain X(Z) as:\\
+ \item 
+ \begin{align}
+ \notag X(Z) =((\dfrac{7}{2})Z^{-75}((Z^{76}-1))(Z-1)^{-1}-\\
+ \notag(-3)(2Z^{74})^{-1}(Z^{75}-1)(2(Z-1)^{2})^{-1}+\\
+ \notag(-3(75))(2(Z-1)Z^{75})^{-1})(Z-1)^{-1}
+ \end{align}
 
 
  
