@@ -28,6 +28,7 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
+\usepackage{tabularx}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
@@ -82,10 +83,10 @@ Let "$S_n$" denote the sum of n terms in a series ,"a" denotes its first term an
 In the question, a=7 and d=$\dfrac{7}{2}$ , and "n" is unknown\\
 For calculating the number of terms, we use the formula
 \begin{align}
-{T_n} = a + (n-1)d\label{eq:2}
+x(n) = a + (n-1)d\label{eq:2}
 \end{align}
-Where $T_n$ is the nth term of the series\\
-Given that $T_n$ is 84, we solve for "n"
+Where x(n) is the nth term of the series\\
+Given that x(n) is 84, we solve for "n"
 \begin{align}  
 84 = 7+(n-1)\dfrac{7}{2}
 \end{align}
@@ -95,15 +96,30 @@ We now use this result for calculating $S_{23}$
     S_{23} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
     \end{align}
 Again, solving this yields $S_{23}$ as 1046.5\\\\
-For the $n^{th}$ term of (i) bit , we are now required to calculate X(z) given that ($T^{th}$)*u$_{(n)}$ is x(n) \forall n \neq 0, where u$_{(n)}$ is the unit step function. We take x(0) to be 0.\\
+For the $n^{th}$ term of (i) bit , we are now required to calculate X(z) in terms of $u_n$ and x(n). \forall n \neq 0, where u$_{(n)}$ is the unit step function. We take x(0) to be 0.\\
 x(n) = u$_{(n)}$(7 + (n-1)\dfrac{7}{2})\\
 
 The graph of x(n) vs n is shown below.\\
-\graphicspath{ {pictures/} }
+\graphicspath{ {figs/} }
 \includegraphics[width=10.cm, height=6cm]{Figure_1}
-
-
-Now , putting this x(n) in $\eqref{eq:3}$ , we obtain \\
+\\
+Below is the tabular representation of select values based on the above graph\\
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ n & x(n)  \\ 
+ \hline
+ -2 & 0\\
+ -1 & 0  \\ 
+  0 & 0  \\
+  1 & 7  \\
+  2 & 10.5\\
+  3 & 14 \\
+  4 & 17.5\\
+ \hline
+\end{tabular}
+\end{center}
+\\Now , putting this x(n) in $\eqref{eq:3}$ , we obtain \\
 \begin{align}
      \sum_{n=-\infty}^{\infty}(7 + (n-1)\dfrac{7}{2})u_{(n)}Z^{-n} =X(z)
 \end{align}
@@ -123,7 +139,7 @@ We now calculate the sum using the formula for gp and agp(Assuming k terms), we 
 \end{align}
 Below is the graph of X(z) vs z\\
 
-\graphicspath{ {pictures/} }
+\graphicspath{ {figs/} }
 \includegraphics[width=9cm, height=6cm]{Figure_2}
 
 It is told to replace $S_n$*u$_{(n-1)}$ with x(n) \\and therefore calculate X(Z). The equation $\eqref{eq:1}$ and calculate the general form of X(Z) .
