@@ -83,12 +83,12 @@ Let "$S_n$" denote the sum of n terms in a series ,"a" denotes its first term an
 In the question, a=7 and d=$\dfrac{7}{2}$ , and "n" is unknown\\
 For calculating the number of terms, we use the formula
 \begin{align}
-x(n) = a + (n-1)d\label{eq:2}
+x(n) = x(0) + nd\label{eq:2}
 \end{align}
 Where x(n) is the nth term of the series\\
 Given that x(n) is 84, we solve for "n"
 \begin{align}  
-84 = 7+(n-1)\dfrac{7}{2}
+84 = \dfrac{7}{2}+(n)\dfrac{7}{2}
 \end{align}
 Solving this yields n=23.\\
 We now use this result for calculating $S_{23}$
@@ -96,53 +96,40 @@ We now use this result for calculating $S_{23}$
     S_{23} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
     \end{align}
 Again, solving this yields $S_{23}$ as 1046.5\\\\
-For the $n^{th}$ term of (i) bit , we are now required to calculate X(z) in terms of $u_n$ and x(n). \forall n \neq 0, where u$_{(n)}$ is the unit step function. We take x(0) to be 0.\\
-x(n) = u$_{(n)}$(7 + (n-1)\dfrac{7}{2})\\
-
-The graph of x(n) vs n is shown below.\\
-\graphicspath{ {figs/} }
-\includegraphics[width=10.cm, height=6cm]{Figure_1}
-\\
-Below is the tabular representation of select values based on the above graph\\
-\begin{center}
-\begin{tabular}{ |c|c|c| } 
- \hline
- n & x(n)  \\ 
- \hline
- -2 & 0\\
- -1 & 0  \\ 
-  0 & 0  \\
-  1 & 7  \\
-  2 & 10.5\\
-  3 & 14 \\
-  4 & 17.5\\
- \hline
-\end{tabular}
-\end{center}
-\\Now , putting this x(n) in $\eqref{eq:3}$ , we obtain \\
+For the $n^{th}$ term of (i) bit , we are now required to calculate $X_{1(z)}$ in terms of $u_n$ and $x_{1(n)}$.Where u$_{(n)}$ is the unit step function.Here, $x_{1(0)}$ equals 7.\\
 \begin{align}
-     \sum_{n=-\infty}^{\infty}(7 + (n-1)\dfrac{7}{2})u_{(n)}Z^{-n} =X(z)
+    x_{1(n)} = u_{(n)}(x_{1(0)}+\dfrac{7n}{2})
+    \end{align}
+\graphicspath{ {figs/} }
+\includegraphics[width=10cm, height=6cm]{graph_1}
+\caption{The graph of $x_{1(n)}$ vs n is shown above.}\\
+\label{graph:1}
+
+\\Now , putting this $x_{1(n)}$ in $\eqref{eq:3}$ , we obtain \\
+\begin{align}
+     \sum_{n=-\infty}^{\infty}(x_{1(0)} + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_{1(z)}
 \end{align}
 \begin{align}
-\sum_{n=-\infty}^{\infty}(\dfrac{7}{2} + \dfrac{7n}{2})u_{(n)}Z^{-n} =X(z)
+\sum_{n=-\infty}^{\infty}(7 + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_{1(z)}
 \end{align}
 For the \textbf{region of convergence}\\
-X(z) = convergent $\forall$ z $\epsilon$(-\infty,-1)U(1,\infty)
+$X_{1(z)}$ = convergent $\forall$ z $\epsilon$(-\infty,-1)U(1,\infty)
 \\
 
 This can be proved from ratio test . \\
-We now calculate the sum using the formula for gp and agp(Assuming k terms), we obtain.\\
+We now calculate the sum using the formula for gp and agp(Assuming $(k-1)^{th}$ term is the last term and also where $x_{1(0)}$ is the first term), we obtain.\\
 
 \begin{align}
-   \notag \dfrac{7}{2}(1-z^k)(z^k(1-z))^{-1}+
-   \\ \notag(7(z^k-1)z)(2z^k(z-1)^2)^{-1}-\\ (7kz)(2z^{k+1}(z-1))^{-1}=X(z)
+   \notag 7(1-z^k)(z^k(1-z))^{-1}+
+   \\ \notag(7(z^k-1)z)(2z^k(z-1)^2)^{-1}-\\ (7kz)(2z^{k+1}(z-1))^{-1}=X_{1(z)}
 \end{align}
-Below is the graph of X(z) vs z\\
-
 \graphicspath{ {figs/} }
 \includegraphics[width=9cm, height=6cm]{Figure_2}
+\caption{Above is the graph of $X_{1(z)}$ vs z}\\
+\label{graph:2}
+\\
 
-It is told to replace $S_n$*u$_{(n-1)}$ with x(n) \\and therefore calculate X(Z). The equation $\eqref{eq:1}$ and calculate the general form of X(Z) .
+It is told to replace $S_n$*u$_{(n)}$ with x(n) \\and therefore calculate X(Z). The equation $\eqref{eq:1}$ and calculate the general form of X(Z) .
 It is known that\\
 \begin{align}
  \sum_{n=-\infty}^{\infty} Z^{-n}x(n) = X(Z)\label{eq:3}
@@ -190,7 +177,30 @@ Substituting the values, we get
      10 = 34 + (n-1)(-2)
      \end{align}
 Solving this yields n=13\\
-For calculating the sum , we use \eqref{eq:1}
+For calculating $X_{2(z)}$, we first write $x_{2(n)}$ ( here x(0) is 34)\\
+\begin{align}
+x_{2(n)} = x_{2(0)} + nd\\
+x_{2(n)} = x_{2(0)} -2n
+\end{align}
+\graphicspath{ {figs/} }
+\includegraphics[width=10cm, height=6cm]{graph_2}
+\caption{The graph of $x_{2(n)}$ vs n is shown above}\\
+\label{graph:3}
+\\
+Now , putting this value in \eqref{eq:3}, we obtain\\
+\begin{align}
+\sum_{n=-\infty}^{\infty}(x_{2(0)} -2n)u_{(n)}Z^{-n} =X_{2(z)}
+\end{align}
+It can be observed that the region of convergence does not change as the nature of the function remains the same as (i)bit\\
+For $X_{2(z)}$ , we use the same analogy as in (i)bit to obtain X(z)\\
+\begin{align}
+   \notag 32(1-z^k)(z^k(1-z))^{-1}-
+   \\ \notag(2(z^k-1)z)(z^k(z-1)^2)^{-1}+\\ (2kz)(z^{k+1}(z-1))^{-1}=X_{2(z)}
+\end{align}
+
+
+
+As For calculating the sum , we use \eqref{eq:1}
 \begin{align}
  S_{13} = \dfrac{13}{2}(64+11(-2))
  \end{align}
@@ -212,6 +222,25 @@ Again, for n , we use the formula \eqref{eq:2}
 -230= -5+(n-1)(-3)
 \end{align}
 Solving this yields n=76\\
+Now, we write the equation for $x_{3(n)}$ ( given x(0) is -5)
+\begin{align}
+x_{3(n)} = x_3{(0)} + nd\\
+x_{3(n)}=x_3{(0)} - 3n
+\end{align}
+\graphicspath{ {figs/} }
+\includegraphics[width=10cm, height=6cm]{graph_3}
+\caption{The graph of $x_{3(n)}$ vs n is shown above.}\\
+\label{graph:4}
+Now , putting this value in \eqref{eq:3}, we obtain\\
+\begin{align}
+\sum_{n=-\infty}^{\infty}(x_{3(0)} -3n)u_{(n)}Z^{-n} =X_{3(z)}
+\end{align}
+Again , it can be observed that the region of convergence does not change as the nature of the function remains the same as (i)bit\\
+For $X_{3(z)}$ , we use the same analogy as in (i)bit to obtain \\
+\begin{align}
+   \notag -5(1-z^k)(z^k(1-z))^{-1}-
+   \\ \notag(3(z^k-1)z)(z^k(z-1)^2)^{-1}+\\ (3kz)(z^{k+1}(z-1))^{-1}=X_{3(z)}
+\end{align}
 Now, for the sum we use equation \eqref{eq:1} :\\
 \begin{align}
     S_{76}=\dfrac{76}{2}(-10+(76-1)(-3))
@@ -224,6 +253,28 @@ Solving this we obtain $S_{76}$=-8930.\\\\
  \notag(-3)(2Z^{74})^{-1}(Z^{75}-1)(2(Z-1)^{2})^{-1}+\\
  \notag(-3(75))(2(Z-1)Z^{75})^{-1})(Z-1)^{-1}
  \end{align}
+ \\
+
+ \newpage
+ 
+ \begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ Parameters & Equations  \\ 
+ \hline
+  $x_{1(n)}$ &  $x_{1(0)}$ +3.5n\\
+  $x_{2(n)}$ & $x_{2(0)}$ -2n\\
+  $x_{3(n)}$ & $x_{3(0)}$ -3n\\
+ $X_{1(z)}$ &  $7(1-z^k)(z^k(1-z))^{-1}+
+    (7(z^k-1)z)(2z^k(z-1)^2)^{-1}-(7kz)(2z^{k+1}(z-1))^{-1}$\\
+ $X_{2(z)}$ &  $32(1-z^k)(z^k(1-z))^{-1}-
+    (2(z^k-1)z)(z^k(z-1)^2)^{-1}+(2kz)(z^{k+1}(z-1))^{-1}$  \\ 
+$Z_{3(z)}$ &  $-5(1-z^k)(z^k(1-z))^{-1}-
+    (3(z^k-1)z)(z^k(z-1)^2)^{-1}+(3kz)(z^{k+1}(z-1))^{-1}$ \\
+ \hline
+\end{tabular}
+\end{center}
+\caption{ Given above is the list of all parameters used in the analysis so far}.\\
 
 
  
