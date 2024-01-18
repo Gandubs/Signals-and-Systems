@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  10 JAN 2024 13:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  18 JAN 2024 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,160 +1271,75 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
-
- []
-
-<figs//graph_1.png, id=11, 1336.995pt x 695.9601pt>
+<figs//graph_1.png, id=11, 462.528pt x 346.896pt>
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
-Package pdftex.def Info: figs//graph_1.png  used on input line 101.
-(pdftex.def)             Requested size: 284.53099pt x 170.70818pt.
+Package pdftex.def Info: figs//graph_1.png  used on input line 102.
+(pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
+
 ! Undefined control sequence.
-l.102 \captionsetup
+l.103 \captionsetup
                    {Graph:1 $x_{1(n)}$ vs n }
 ? 
 
-Overfull \hbox (32.53099pt too wide) in paragraph at lines 101--103
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 102--104
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.119 ...convergent $\forall$ z $\epsilon$(-\infty
-                                                  ,-1)U(1,\infty)
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.121 
-      
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.121 
-      
-? 
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.121 
-      
+<figs//graph_2.png, id=18, 462.528pt x 346.896pt>
+File: figs//graph_2.png Graphic file (type png)
+<use figs//graph_2.png>
+Package pdftex.def Info: figs//graph_2.png  used on input line 153.
+(pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
+! Undefined control sequence.
+l.154 \captionsetup
+                   {Graph:2 $x_{2(n)}$ vs n }
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--131
-
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 153--156
+ [][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figs//graph_1.png>]
-<figs//graph_2.png, id=42, 1336.995pt x 695.9601pt>
-File: figs//graph_2.png Graphic file (type png)
-<use figs//graph_2.png>
-Package pdftex.def Info: figs//graph_2.png  used on input line 150.
-(pdftex.def)             Requested size: 284.53099pt x 170.70818pt.
-
-! Undefined control sequence.
-l.151 \captionsetup
-                   {Graph:2 $x_{2(n)}$ vs n }
-? 
-
-Overfull \hbox (32.53099pt too wide) in paragraph at lines 150--153
- [][] 
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.156 \textbf
-             {Z-Transform of $x_{2(n)}$}\\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
-
- []
-
-<figs//graph_3.png, id=46, 1336.995pt x 695.9601pt>
+<figs//graph_3.png, id=53, 462.528pt x 346.896pt>
 File: figs//graph_3.png Graphic file (type png)
 <use figs//graph_3.png>
-Package pdftex.def Info: figs//graph_3.png  used on input line 195.
-(pdftex.def)             Requested size: 284.53099pt x 170.70818pt.
+Package pdftex.def Info: figs//graph_3.png  used on input line 201.
+(pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
+
 ! Undefined control sequence.
-l.196 \captionsetup
+l.202 \captionsetup
                    {Graph:3 $x_{3(n)}$ vs n }
 ? 
 
-Overfull \hbox (32.53099pt too wide) in paragraph at lines 195--198
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 201--204
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--213
-
- []
-
-[2 <./figs//graph_2.png> <./figs//graph_3.png>]
 ! Undefined control sequence.
-l.239 \captionsetup
+l.242 \captionsetup
                    {TABLE 1 : PARAMETERS , DESCRIPTIONS AND VALUES }
 ? 
 
-Overfull \hbox (309.82504pt too wide) in paragraph at lines 220--240
+Overfull \hbox (40.23238pt too wide) in paragraph at lines 229--243
  [] 
  []
 
-[3
-
-] (./a1.aux)
+[2 <./figs//graph_2.png> <./figs//graph_3.png>] (./a1.aux)
 Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 29649 strings out of 478287
- 583861 string characters out of 5849290
- 849898 words of memory out of 5000000
+ 29651 strings out of 478287
+ 583913 string characters out of 5849290
+ 854904 words of memory out of 5000000
  47181 multiletter control sequences out of 15000+600000
  537318 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,9n,96p,406b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,9n,96p,406b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1433,10 +1348,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a1.pdf (3 pages, 136990 bytes).
+Output written on a1.pdf (2 pages, 91403 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
- 31 named destinations out of 1000 (max. 500000)
+ 33 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

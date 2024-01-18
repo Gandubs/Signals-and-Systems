@@ -69,7 +69,7 @@ Find the sums given below:
 \textbf{Solutions}:
 \begin{enumerate}
 \item[(i)]   
-7 + $10\dfrac{1}{2}$ + 14 ... + 84\\
+7 + $10\dfrac{1}{2}$ + 14 ... + 84\vspace{0.05cm}
 \vspace{0.2cm}
 
 Let "$S_{k}$" denote the sum of first k terms in a series ,"a" denotes its first term and "d" denotes the common difference.
@@ -85,12 +85,13 @@ Where x(n) is the $(n+1)^{th}$ term of the series. Putting the values
 84 = 7+\dfrac{7n}{2}\\
 n=22
 \end{align}
-\textbf{Calculating $S_n$ for $x_{1(n)}$ }\\
+\item 
+\textbf{Calculating $S_n$ for $x_{1(n)}$} : 
 We now use this result for calculating $S_{23}$
 \begin{align}
     S_{23} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
     \end{align}
-Solving this yields $S_{23}$ = 1046.5\\\\
+Solving this yields $S_{23}$ = 1046.5\vspace{0.05cm}\vspace{0.05cm}
 We are now required to calculate $X_{1(z)}$ in terms of $u_n$ and $x_{1(n)}$.Where u$_{(n)}$ is the unit step function.
 \begin{align}
     x_{1(n)} = u_{(n)}(x_{1(0)}+\dfrac{7n}{2})
@@ -101,38 +102,40 @@ We are now required to calculate $X_{1(z)}$ in terms of $u_n$ and $x_{1(n)}$.Whe
 \includegraphics[width=10cm, height=6cm]{graph_1}
 \captionsetup{Graph:1 $x_{1(n)}$ vs n }
 \end{figure}
-\\\\\\\\
-\textbf{Z-Transform of $x_{1(n)}$}\\
+\vspace{0.05cm}
+\item 
+\textbf{Z-Transform of $x_{1(n)}$} :
 \vspace{0.2cm}
 By the Definition of Z-transform:
 \begin{align}
  \sum_{n=-\infty}^{\infty} Z^{-n}x(n) = X(Z)\label{eq:3}
  \end{align}
-\\Putting $x_{1(n)}$ in $\eqref{eq:3}$ , we get \\
+\vspace{0.05cm}Putting $x_{1(n)}$ in $\eqref{eq:3}$ , we get \vspace{0.05cm}
 \begin{align}
      \sum_{n=-\infty}^{\infty}(x_{1(0)} + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_{1(z)}
 \end{align}
 \begin{align}
 \sum_{n=-\infty}^{\infty}(7 + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_{1(z)}
 \end{align}
-For the \textbf{region of convergence}\\
-$X_{1(z)}$ = convergent $\forall$ z $\epsilon$(-\infty,-1)U(1,\infty)
-\\
-
-This can be proved from ratio test . \\
-We now calculate the sum (Here $(k-1)^{th}$ term is the last term and  $x_{1(0)}$ is the first term).
 \begin{align}
-   \notag 7(1-z^k)(z^k(1-z))^{-1}+
-   \\ \notag(7(z^k-1)z)(2z^k(z-1)^2)^{-1}-\\ (7kz)(2z^{k+1}(z-1))^{-1}=X_{1(z)}
+\notag7z(1-z)^{-1}+\\
+\notag 7z((1-z))^{-1}+\\
+7z(2(1-z))^{-2}=X_{1(z)}
 \end{align}
-\\
-\\
+\vspace{0.05cm}
+\vspace{0.05cm}
+\textbf{Region of Convergence}
+\vspace{0.05cm}
+\begin{align}
+    \lvert z\rvert  <  1 
+    \end{align}
+
 \vspace{0.5cm}
 \item[(ii)]
- 34 + 32 + 30 ... + 10\\
+ 34 + 32 + 30 ... + 10\vspace{0.05cm}
 \vspace{0.2cm}
 
-In this bit \\ a=34 , d=-2
+In this bit \vspace{0.05cm} a=34 , d=-2
 Using equation \eqref{eq:2}
 \begin{align}
      10 = 34 -2n\\
@@ -152,20 +155,23 @@ x_{2(n)} = x_{2(0)} -2n
 \label{graph:3}
 \end{figure}
 
-\\
-\textbf{Z-Transform of $x_{2(n)}$}\\
-Using \eqref{eq:3}\\
+\vspace{0.05cm}
+\item[1)] 
+\textbf{Z-Transform of $x_{2(n)}$} :
+Using \eqref{eq:3}\vspace{0.05cm}
 \begin{align}
 \sum_{n=-\infty}^{\infty}(x_{2(0)} -2n)u_{(n)}Z^{-n} =X_{2(z)}
 \end{align}
-Region of convergence does not change as the nature of the function remains the same as (i)bit\\
-For $X_{2(z)}$ , we use the same process as in (i)bit.
+Region of convergence does not change as the nature of the function remains the same as (i)bit\vspace{0.05cm}
+For $X_{2(z)}$ 
 \begin{align}
-   \notag 32(1-z^k)(z^k(1-z))^{-1}-
-   \\ \notag(2(z^k-1)z)(z^k(z-1)^2)^{-1}+\\ (2kz)(z^{k+1}(z-1))^{-1}=X_{2(z)}
+  \notag 34z(1-z)^{-1}-\\
+\notag 34z((1-z))^{-1}-\\
+       2z((1-z))^{-2}=X_{1(z)}
 \end{align}
 
-\textbf{Calculating $S_n$ of $x_{2(n)}$}\\
+\item[2)] 
+\textbf{Calculating $S_n$ of $x_{2(n)}$} :
 For calculating the sum , we use \eqref{eq:1}
 \begin{align}
  S_{13} = \dfrac{13}{2}(64+11(-2))\\
@@ -174,10 +180,10 @@ For calculating the sum , we use \eqref{eq:1}
  
 \vspace{0.5cm}
 \item[(iii)]
--5 + -8 + -11 ... -230\\
+-5 + -8 + -11 ... -230\vspace{0.05cm}
 \vspace{0.2cm}
 
-Here a=-5, d=-3\\
+Here a=-5, d=-3\vspace{0.05cm}
 From \eqref{eq:2}
 \begin{align}
 -230= -5 -3n \\
@@ -197,29 +203,32 @@ x_{3(n)}=x_3{(0)} - 3n
 \label{graph:4}
 \end{figure}
 
-\textbf{Z-Transform of $x_{3(n)}$}\\
-Putting $x_{3(n)}$ in \eqref{eq:3}\\
+\item[1)] 
+\textbf{Z-Transform of $x_{3(n)}$} :
+Putting $x_{3(n)}$ in \eqref{eq:3}\vspace{0.05cm}
 \begin{align}
 \sum_{n=-\infty}^{\infty}(x_{3(0)} -3n)u_{(n)}Z^{-n} =X_{3(z)}
 \end{align}
-Region of convergence does not change as the nature of the function remains the same as (i)bit\\
-For $X_{3(z)}$ , we use the same process as in (i)bit\\
+Region of convergence does not change as the nature of the function remains the same as (i)bit\vspace{0.05cm}
+For $X_{3(z)}$ , we use the same process as in (i)bit\vspace{0.05cm}
 \begin{align}
-   \notag -5(1-z^k)(z^k(1-z))^{-1}-
-   \\ \notag(3(z^k-1)z)(z^k(z-1)^2)^{-1}+\\ (3kz)(z^{k+1}(z-1))^{-1}=X_{3(z)}
+  \notag -5z(1-z)^{-1}-\\
+\notag 5z((1-z))^{-1}-\\
+       3z((1-z))^{-2}=X_{1(z)}
 \end{align}
-\textbf{Calculating $S_n$ of $x_{3(n)}$}\\
-Using \eqref{eq:1} :\\
+\item[2)]
+\textbf{Calculating $S_n$ of $x_{3(n)}$} :
+Using \eqref{eq:1} :\vspace{0.05cm}
 \begin{align}
-    S_{76}=\dfrac{76}{2}(-10+(76-1)(-3))
-   \\S_{76}=-8930
+    S_{76}=\dfrac{76}{2}(-10+(76-1)(-3))\\
+   S_{76}=-8930
     \end{align}
-  
- \newpage
+
+  \vspace{2cm}
  \begin{center}
 \begin{tabular}{ |c|c|c| } 
  \hline
- Parameters & Description & Values    \\ 
+ Parameters & Description & Values    \\
  \hline
   $x_{1(n)}$ & Sequence labelled (i) &  $x_{1(0)}$ +3.5n\\
   $x_{2(n)}$ &  Sequence labelled (ii) & $x_{2(0)}$ -2n \\
@@ -227,12 +236,6 @@ Using \eqref{eq:1} :\\
    $x_{1(0)}$ & $1^{st}$ term of sequence $x_{1(n)}$ & 7 \\
      $x_{2(0)}$ & $1^{st}$ term of sequence $x_{2(n)}$& 34 \\
      $x_{3(0)}$ & $1^{st}$ term of sequence $x_{3(n)}$ & -5 \\
- $X_{1(z)}$ & Z-Transform of $x_{1(n)}$ & $7(1-z^k)(z^k(1-z))^{-1}+
-    (7(z^k-1)z)(2z^k(z-1)^2)^{-1}-(7kz)(2z^{k+1}(z-1))^{-1}$\\
- $X_{2(z)}$ &  Z-Transform of $x_{2(n)}$ & $32(1-z^k)(z^k(1-z))^{-1}-
-    (2(z^k-1)z)(z^k(z-1)^2)^{-1}+(2kz)(z^{k+1}(z-1))^{-1}$ \\ 
-$X_{3(z)}$ &  Z-Transform of $x_{3(n)}$ & $-5(1-z^k)(z^k(1-z))^{-1}-
-    (3(z^k-1)z)(z^k(z-1)^2)^{-1}+(3kz)(z^{k+1}(z-1))^{-1}$ \\
  \hline
 \end{tabular}
 \centering
