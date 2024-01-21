@@ -72,174 +72,190 @@ Find the sums given below:
 7 + $10\dfrac{1}{2}$ + 14 ... + 84\vspace{0.05cm}
 \vspace{0.2cm}
 
-Let "$S_{k}$" denote the sum of first k terms in a series ,"a" denotes its first term and "d" denotes the common difference.
+Let $S_i{(k)}$ denote the sum of first k terms in the $i^{th}$ series , $x_i(0)$ denotes its first term , $d_i$ denotes the common difference and $u_{(k)}$ denote thte unit step function.
 \begin{align}
-{S_k} = \dfrac{k}{2}(2a + (k-1)d)\label{eq:1}
+{S_k} = \dfrac{ku_{(k)}}{2}(2x_i(0) + (k-1)d_i)\label{eq:1}
 \end{align}
 For number of terms , we use
 \begin{align}
-x(n) = x(0) + nd\label{eq:2}
+x_i(n) = (x_i(0) + nd_i)u_n\label{eq:2}
 \end{align}
-Where x(n) is the $(n+1)^{th}$ term of the series. Putting the values
+Where $x_i(n)$ is the $(n+1)^{th}$ term of the series. Putting the values
 \begin{align}  
 84 = 7+\dfrac{7n}{2}\\
 n=22
 \end{align}
 \item 
-\textbf{Calculating $S_n$ for $x_{1(n)}$} : 
-We now use this result for calculating $S_{23}$
+\textbf{Calculating $S_1(k)$ for $x_1(n)$} : 
+We now use this result for calculating $S_1(23)$
 \begin{align}
-    S_{23} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
+    S_1{(23)} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
     \end{align}
-Solving this yields $S_{23}$ = 1046.5\vspace{0.05cm}\vspace{0.05cm}
-We are now required to calculate $X_{1(z)}$ in terms of $u_n$ and $x_{1(n)}$.Where u$_{(n)}$ is the unit step function.
+Solving this yields $S_1{(23)}$ = 1046.5\vspace{0.05cm}\vspace{0.05cm}
+We are now required to calculate $X_1(z)$ in terms of $u_n$ and $x_1(n)$.Where u$_{(n)}$ is the unit step function.
 \begin{align}
-    x_{1(n)} = u_{(n)}(x_{1(0)}+\dfrac{7n}{2})
+    x_1(n) = u_{(n)}(x_1(0)+\dfrac{7n}{2})
     \end{align}
     \begin{figure}[!ht]
     \centering
 \graphicspath{ {figs/} }
 \includegraphics[width=10cm, height=6cm]{graph_1}
-\captionsetup{Graph:1 $x_{1(n)}$ vs n }
+\captionsetup{Graph:1 $x_1(n)$ vs n }
 \end{figure}
 \vspace{0.05cm}
 \item 
-\textbf{Z-Transform of $x_{1(n)}$} :
+\textbf{Z-Transform of $x_1(n)$} :
 \vspace{0.2cm}
 By the Definition of Z-transform:
 \begin{align}
- \sum_{n=-\infty}^{\infty} Z^{-n}x(n) = X(Z)\label{eq:3}
+ \sum_{n=-\infty}^{\infty} Z^{-n}x_i(n) = X_i(Z)\label{eq:3}
  \end{align}
-\vspace{0.05cm}Putting $x_{1(n)}$ in $\eqref{eq:3}$ , we get \vspace{0.05cm}
+\vspace{0.05cm}Putting $x_1(n)$ in $\eqref{eq:3}$ , we get \vspace{0.05cm}
 \begin{align}
-     \sum_{n=-\infty}^{\infty}(x_{1(0)} + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_{1(z)}
+     \sum_{n=-\infty}^{\infty}(x_1(0) + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_1(z)
 \end{align}
 \begin{align}
-\sum_{n=-\infty}^{\infty}(7 + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_{1(z)}
+\sum_{n=-\infty}^{\infty}(7 + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_1(z)
 \end{align}
 \begin{align}
 \notag7z(1-z)^{-1}+\\
 \notag 7z((1-z))^{-1}+\\
-7z(2(1-z))^{-2}=X_{1(z)}
+7z(2(1-z))^{-2}=X_1(z)
 \end{align}
 \vspace{0.05cm}
 \vspace{0.05cm}
+\item[3)]
 \textbf{Region of Convergence}
 \vspace{0.05cm}
 \begin{align}
     \lvert z\rvert  <  1 
     \end{align}
 
+\vspace{1cm}
+
 \vspace{0.5cm}
 \item[(ii)]
  34 + 32 + 30 ... + 10\vspace{0.05cm}
 \vspace{0.2cm}
 
-In this bit \vspace{0.05cm} a=34 , d=-2
+In this bit  $x_2(0)$ = 34 , $d_2$ = -2.\\
+
 Using equation \eqref{eq:2}
 \begin{align}
      10 = 34 -2n\\
      n=12 
      \end{align}
-For $x_{2(n)}$
+For $x_2(n)$
 \begin{align}
-x_{2(n)} = x_{2(0)} + nd\\
-x_{2(n)} = x_{2(0)} -2n
+x_2(n) = x_2(0) + nd_2\\
+x_2(n) = x_2(0) -2n
 \end{align}
 
 \begin{figure}[!ht]
 \centering
   \graphicspath{ {figs/} }
 \includegraphics[width=10cm, height=6cm]{graph_2}
-\captionsetup{Graph:2 $x_{2(n)}$ vs n }
+\captionsetup{Graph:2 $x_2(n)$ vs n }
 \label{graph:3}
 \end{figure}
 
 \vspace{0.05cm}
 \item[1)] 
-\textbf{Z-Transform of $x_{2(n)}$} :
+\textbf{Z-Transform of $x_2(n)$} :
 Using \eqref{eq:3}\vspace{0.05cm}
 \begin{align}
-\sum_{n=-\infty}^{\infty}(x_{2(0)} -2n)u_{(n)}Z^{-n} =X_{2(z)}
+\sum_{n=-\infty}^{\infty}(x_2(0) -2n)u_{(n)}Z^{-n} =X_2(z)
 \end{align}
-Region of convergence does not change as the nature of the function remains the same as (i)bit\vspace{0.05cm}
-For $X_{2(z)}$ 
+For $X_2(z)$ 
 \begin{align}
   \notag 34z(1-z)^{-1}-\\
 \notag 34z((1-z))^{-1}-\\
-       2z((1-z))^{-2}=X_{1(z)}
+       2z((1-z))^{-2}=X_2(z)
 \end{align}
 
 \item[2)] 
-\textbf{Calculating $S_n$ of $x_{2(n)}$} :
+\textbf{Calculating $S_2(k)$ of $x_2(n)$} :
 For calculating the sum , we use \eqref{eq:1}
 \begin{align}
- S_{13} = \dfrac{13}{2}(64+11(-2))\\
- S_{13}= 286.
+ S_2{(13)} = \dfrac{13}{2}(64+11(-2))\\
+ S_2{(13)}= 286.
  \end{align}
+ \item[3)]
+ \textbf{Region of Convergence}
+\vspace{0.05cm}
+\begin{align}
+    \lvert z\rvert  <  1 
+    \end{align}
+
+\vspace{1cm}
  
 \vspace{0.5cm}
 \item[(iii)]
 -5 + -8 + -11 ... -230\vspace{0.05cm}
 \vspace{0.2cm}
 
-Here a=-5, d=-3\vspace{0.05cm}
+Here $x_3(0)$ = -5, $d_3$ = -3\vspace{0.05cm}
 From \eqref{eq:2}
 \begin{align}
 -230= -5 -3n \\
 n=75
 \end{align}
-For $x_{3(n)}$
+For $x_3(n)$
 \begin{align}
-x_{3(n)} = x_3{(0)} + nd\\
-x_{3(n)}=x_3{(0)} - 3n
+x_3(n) = x_3(0) + nd_3\\
+x_{3(n)}=x_3(0) - 3n
 \end{align}
 
 \begin{figure}[!ht]   
 \centering
 \graphicspath{ {figs/} }
 \includegraphics[width=10cm, height=6cm]{graph_3}
-\captionsetup{Graph:3 $x_{3(n)}$ vs n }
+\captionsetup{Graph:3 $x_3(n)$ vs n }
 \label{graph:4}
 \end{figure}
 
 \item[1)] 
-\textbf{Z-Transform of $x_{3(n)}$} :
-Putting $x_{3(n)}$ in \eqref{eq:3}\vspace{0.05cm}
+\textbf{Z-Transform of $x_3(n)$} :
+Putting $x_3(n)$ in \eqref{eq:3}\vspace{0.05cm}
 \begin{align}
-\sum_{n=-\infty}^{\infty}(x_{3(0)} -3n)u_{(n)}Z^{-n} =X_{3(z)}
+\sum_{n=-\infty}^{\infty}(x_3(0) -3n)u_{(n)}Z^{-n} =X_3(z)
 \end{align}
-Region of convergence does not change as the nature of the function remains the same as (i)bit\vspace{0.05cm}
-For $X_{3(z)}$ , we use the same process as in (i)bit\vspace{0.05cm}
+For $X_3(z)$ , we use the same process as in (i) bit\vspace{0.05cm}
 \begin{align}
   \notag -5z(1-z)^{-1}-\\
 \notag 5z((1-z))^{-1}-\\
-       3z((1-z))^{-2}=X_{1(z)}
+       3z((1-z))^{-2}=X_3(z)
 \end{align}
 \item[2)]
-\textbf{Calculating $S_n$ of $x_{3(n)}$} :
+\textbf{Calculating $S_3(k)$ of $x_3(n)$} :
 Using \eqref{eq:1} :\vspace{0.05cm}
 \begin{align}
-    S_{76}=\dfrac{76}{2}(-10+(76-1)(-3))\\
-   S_{76}=-8930
+    S_3(76)=\dfrac{76}{2}(-10+(76-1)(-3))\\
+   S_3(76)=-8930
+    \end{align}
+     \item[3)]
+ \textbf{Region of Convergence}
+\vspace{0.05cm}
+\begin{align}
+    \lvert z\rvert  <  1 
     \end{align}
 
-  \vspace{2cm}
+\vspace{0.05cm}
+
+  \vspace{1cm}
  \begin{center}
 \begin{tabular}{ |c|c|c| } 
  \hline
- Parameters & Description & Values    \\
+ Symbols & Description & Values    \\
  \hline
-  $x_{1(n)}$ & Sequence labelled (i) &  $x_{1(0)}$ +3.5n\\
-  $x_{2(n)}$ &  Sequence labelled (ii) & $x_{2(0)}$ -2n \\
-  $x_{3(n)}$ &  Sequence labelled (iii) & $x_{3(0)}$ -3n \\
-   $x_{1(0)}$ & $1^{st}$ term of sequence $x_{1(n)}$ & 7 \\
-     $x_{2(0)}$ & $1^{st}$ term of sequence $x_{2(n)}$& 34 \\
-     $x_{3(0)}$ & $1^{st}$ term of sequence $x_{3(n)}$ & -5 \\
+  \small $d_i$ & \small Common Difference & 3.5, -2, -3\\
+  \small $x_i(n)$ & \small Sequence  &  \scriptsize ($x_i(0)$ +$nd_i$)$u_{(k)}$\\
+     \small $X_i(z)$ & \small Z-Transform of $x_i(n)$ & \scriptsize 2$x_i(0)(1-z)^{-1}+(d_i)z(1-z)^{-2}$ \\
+     \small $S_i(k)$ & \scriptsize Sum of k-terms in $i^{th}$ series & \scriptsize $\dfrac{ku_{(k)}}{2}(2x_i(0) + (k-1)d_i)$\\
  \hline
 \end{tabular}
 \centering
-\captionsetup{TABLE 1 : PARAMETERS , DESCRIPTIONS AND VALUES }
+\captionsetup{Table 1 : PARAMETERS , DESCRIPTIONS AND VALUES }
 \end{center}
 \end{enumerate}
 \end{document}
