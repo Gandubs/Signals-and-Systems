@@ -1,22 +1,14 @@
 \begin{center}
 \begin{tabular}{ |c|c|c| } 
  \hline
- Parameters & Description & Values    \\ 
+ Symbols & Description & Values    \\
  \hline
-  $x_{1(n)}$ & Sequence labelled (i) &  $x_{1(0)}$ +3.5n\\
-  $x_{2(n)}$ &  Sequence labelled (ii) & $x_{2(0)}$ -2n \\
-  $x_{3(n)}$ &  Sequence labelled (iii) & $x_{3(0)}$ -3n \\
-   $x_{1(0)}$ & $1^{st}$ term of sequence $x_{1(n)}$ & 7 \\
-     $x_{2(0)}$ & $1^{st}$ term of sequence $x_{2(n)}$& 34 \\
-     $x_{3(0)}$ & $1^{st}$ term of sequence $x_{3(n)}$ & -5 \\
- $X_{1(z)}$ & Z-Transform of $x_{1(n)}$ & $7(1-z^k)(z^k(1-z))^{-1}+
-    (7(z^k-1)z)(2z^k(z-1)^2)^{-1}-(7kz)(2z^{k+1}(z-1))^{-1}$\\
- $X_{2(z)}$ &  Z-Transform of $x_{2(n)}$ & $32(1-z^k)(z^k(1-z))^{-1}-
-    (2(z^k-1)z)(z^k(z-1)^2)^{-1}+(2kz)(z^{k+1}(z-1))^{-1}$ \\ 
-$X_{3(z)}$ &  Z-Transform of $x_{3(n)}$ & $-5(1-z^k)(z^k(1-z))^{-1}-
-    (3(z^k-1)z)(z^k(z-1)^2)^{-1}+(3kz)(z^{k+1}(z-1))^{-1}$ \\
+  \small $d_i$ & \small Common Difference & 3.5, -2, -3\\
+  \small $x_i(n)$ & \small Sequence  &  \scriptsize ($x_i(0)$ +$nd_i$)$u_{(k)}$\\
+     \small $X_i(z)$ & \small Z-Transform of $x_i(n)$ & \scriptsize 2$x_i(0)(1-z)^{-1}+(d_i)z(1-z)^{-2}$ \\
+     \small $S_i(k)$ & \scriptsize Sum of k-terms in $i^{th}$ series & \scriptsize $\dfrac{ku_{(k)}}{2}(2x_i(0) + (k-1)d_i)$\\
  \hline
 \end{tabular}
 \centering
-\captionsetup{TABLE 1 : PARAMETERS , DESCRIPTIONS AND VALUES }
+\captionsetup{Table 1 : Symbols ,Description and Values }
 \end{center}
