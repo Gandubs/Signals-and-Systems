@@ -5,10 +5,13 @@
  \hline
   \small $d_i$ & \small Common Difference & 3.5, -2, -3\\
   \small $x_i(n)$ & \small Sequence  &  \scriptsize ($x_i(0)$ +$nd_i$)$u_{(k)}$\\
-     \small $X_i(z)$ & \small Z-Transform of $x_i(n)$ & \scriptsize 2$x_i(0)(1-z)^{-1}+(d_i)z(1-z)^{-2}$ \\
-     \small $S_i(k)$ & \scriptsize Sum of k-terms in $i^{th}$ series & \scriptsize $\dfrac{ku_{(k)}}{2}(2x_i(0) + (k-1)d_i)$\\
+     \small $X_i(z)$ & \small Z-Transform of $x_i(n)$ & \scriptsize $zx_i(0)(z-1)^{-1}+d_iz(z-1)^{-2}$ \\
+     \small $S_i(n)$ & \scriptsize Sum of (n+1)terms in $i^{th}$ series & \scriptsize $\dfrac{(n+1)u_{(u)}}{2}(2x_i(0) + kd_i)$\\
+     \small $h[n]$ & \small Unit step function & \scriptsize 0 \forall n<0 , 1 \forall n \geq 0\\
+     \small $H(z)$ & \small Z-Transform of $H(z)$ & \small          $z(z-1)^{-1}$\\
+     \small $S_i(z)$ & \small Z-Transform of $S_i(z)$ & \small $X_i(z)$*$H(z)$\\
  \hline
 \end{tabular}
 \centering
-\captionsetup{Table 1 : Symbols ,Description and Values }
+\captionsetup{Table 1 : Parameters , Descriptions AND Values }
 \end{center}
