@@ -73,7 +73,7 @@ Find the sums given below:
 \vspace{0.2cm}
 
 \begin{align}
-{S_n} = \dfrac{(n+1)u_{(n)}}{2}(2x_i(0) + (n)d_i)\label{eq:1}
+{S_n} = \dfrac{(n+1)u_{(n)}}{2}(2x_i(0) + nd_i)\label{eq:1}
 \end{align}
 For number of terms , we use
 \begin{align}
@@ -81,15 +81,16 @@ x_i(n) = (x_i(0) + nd_i)u_n\label{eq:2}
 \end{align}
 Where $x_i(n)$ is the $(n+1)^{th}$ term of the series. Putting the values
 \begin{align}  
-84 = 7+\dfrac{7n}{2}\\
-n=22
+84 &= 7+\dfrac{7n}{2}\\
+n &= 22
 \end{align}
 \item 
-\textbf{Calculating $S_1(22)$} : 
+\underline{Calculating $S_1(22)$} : 
 \begin{align}
-    S_1{(22)} = \dfrac{23}{2}(14+(22)\dfrac{7}{2})
-    \end{align}
-Solving this yields $S_1{(22)}$ = 1046.5\vspace{0.05cm}\vspace{0.1cm}
+    S_1{(22)} &= \dfrac{23}{2}(14+(22)\dfrac{7}{2})
+    S_1{(22)} &= 1046.5
+    \end{align} 
+    \vspace{0.1cm}
 
     \begin{figure}[!ht]
     \centering
@@ -99,7 +100,7 @@ Solving this yields $S_1{(22)}$ = 1046.5\vspace{0.05cm}\vspace{0.1cm}
 \end{figure}
 \vspace{0.05cm}
 \item 
-\textbf{Z-Transform of $x_1(n)$} :
+\underline{Z-Transform of $x_1(n)$} :
 \vspace{0.2cm}
 By the Definition of Z-transform:
 \begin{align}
@@ -107,35 +108,35 @@ By the Definition of Z-transform:
  \end{align}
 \vspace{0.05cm}Putting $x_1(n)$ in $\eqref{eq:3}$ , we get \vspace{0.05cm}
 \begin{align}
-     \sum_{n=-\infty}^{\infty}(x_1(0) + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_1(z)
+     \sum_{n=-\infty}^{\infty}(x_1(0) + \dfrac{7n}{2})u_{(n)}Z^{-n} &= X_1(z)
 \end{align}
 \begin{align}
-\sum_{n=-\infty}^{\infty}(7 + \dfrac{7n}{2})u_{(n)}Z^{-n} =X_1(z)
+\sum_{n=-\infty}^{\infty}(7 + \dfrac{7n}{2})u_{(n)}Z^{-n} &= X_1(z)
 \end{align}
 \begin{align}
 7z(z-1)^{-1}+
-7z(2(z-1))^{-2}=X_1(z) \label{eq:4}\\
+7z(2(z-1))^{-2} &= X_1(z) \label{eq:4}\\
 \forall \lvert z \rvert  >  1 
 \end{align}
     
 \vspace{0.7cm}
 \item[3)]
-\textbf{Z-Transform of $S_1(n)$} :
+\underline{Z-Transform of $S_1(n)$} :
 Using $\eqref{eq:2}$ and assuming 
 \begin{align}
-         h(n)=u(n) \\
-    S_1(n) = x_1(n) * h(n) \\
-    S_1(z) = X_1(z) * H_(z)
+         h(n) &= u(n) \\
+    S_1(n) &= x_1(n) * h(n) \\
+    S_1(z) &= X_1(z) * H_(z)
     \end{align}
     Where $X_1(z)$ comes from $\eqref{eq:4}$.
     \vspace{0.05cm}
     For $H(z)$ , it is Z-transform of unit-step function
     \begin{align}
-        H_1(z) = z(z-1)^{-1} \label{eq:9}
+        H_1(z) &= z(z-1)^{-1} \label{eq:9}
     \end{align}
     For $S_1(z)$ :
     \begin{align}
-            S_1(z) = \notag(7z(z-1)^{-1}+\\
+S_1(z) &= \notag(7z(z-1)^{-1}+
 7z(2(z-1))^{-2})z(z-1)^{-1}
     \end{align}
     ROC:
@@ -144,10 +145,10 @@ Using $\eqref{eq:2}$ and assuming
     \end{align}
     
     \item[4)]
-\textbf{Inversion of $S_1(z)$} :
+\underline{Inversion of $S_1(z)$} :
 By using partial fractions :
 \begin{align}
-    S_1(z) = \notag(7z^2(z-1)^{-2} + 7z^2(2(z-1))^{-3}) 
+    S_1(z) &= \notag(7z^2(z-1)^{-2} + 7z^2(2(z-1))^{-3}) 
 \end{align}
 Using known results:\\
   Inverse Z-transform of
@@ -162,7 +163,7 @@ Using known results:\\
     \end{align}
     Therefore:
 \begin{align}
- S_1(n) = 7(n+1) + 1.75n(n+1)   
+ S_1(n) = (7(n+1) + 1.75n(n+1))u(n)
 \end{align}
 
     
@@ -186,13 +187,13 @@ In this bit  $x_2(0)$ = 34 , $d_2$ = -2.\\
 
 Using equation $\eqref{eq:2}$
 \begin{align}
-     10 = 34 -2n\\
-     n=12 
+     10 &= 34 -2n\\
+     n &= 12 
      \end{align}
 For $x_2(n)$
 \begin{align}
-x_2(n) = x_2(0) + nd_2\\
-x_2(n) = x_2(0) -2n
+x_2(n) &= x_2(0) + nd_2\\
+x_2(n) &= x_2(0) -2n
 \end{align}
 
 
@@ -206,41 +207,41 @@ x_2(n) = x_2(0) -2n
 
 
 \item[1)] 
-\textbf{Calculating $S_2(12)$} :
+\underline{Calculating $S_2(12)$} :
 For calculating the sum , we use $\eqref{eq:1}$
 \begin{align}
- S_2{(12)} = \dfrac{13}{2}(64+11(-2))\\
- S_2{(12)}= 286.
+ S_2{(12)} &= \dfrac{13}{2}(64+11(-2))\\
+ S_2{(12)} &= 286.
  \end{align}
 
     \vspace{0.7cm}
 \item[2)] 
-\textbf{Z-Transform of $x_2(n)$} :
+\underline{Z-Transform of $x_2(n)$} :
 Using $\eqref{eq:3}$
 \vspace{0.05cm}
 \begin{align}
-\sum_{n=-\infty}^{\infty}(x_2(0) -2n)u_{(n)}Z^{-n} =X_2(z)
+\sum_{n=-\infty}^{\infty}(x_2(0) -2n)u_{(n)}Z^{-n} &= X_2(z)
 \end{align}
 For $X_2(z)$ 
 \begin{align}
   34z(z-1)^{-1}-
-       2z((z-1))^{-2}=X_2(z) \label{eq:6}\\
+       2z((z-1))^{-2} &= X_2(z) \label{eq:6}\\
     \lvert z\rvert  >  1 
 \end{align}
 
 \item[3)]
-\textbf{Z-Transform of $S_2(n)$} :
+\underline{Z-Transform of $S_2(n)$} :
 Using $\eqref{eq:2}$ and assuming 
 \begin{align}
-         h[n]=u[n] \\
-    S_2(n) = x_2(n) * h(n) \\
-    S_2(z) = X_2(z) * H(z)
+         h[n] &= u[n] \\
+    S_2(n) &= x_2(n) * h(n) \\
+    S_2(z) &= X_2(z) * H(z)
     \end{align}
     Where $X_2(z)$ comes from $\eqref{eq:6}$ and $H(z)$ from $\eqref{eq:9}$.
     \vspace{0.05cm}
     For $S_2(z)$ :
     \begin{align}
-            S_2(z) = (34z(z-1)^{-1}-
+            S_2(z) &= (34z(z-1)^{-1}-
        2z((z-1))^{-2})z(z-1)^{-1}
     \end{align}
     ROC:
@@ -249,14 +250,14 @@ Using $\eqref{eq:2}$ and assuming
     \end{align}
     
     \item[4)]
-\textbf{Inversion of $S_2(z)$} :
+\underline{Inversion of $S_2(z)$} :
 By using partial fractions 
 \begin{align}
-    S_2(z) = \notag(34z^2(z-1)^{-2} - 2z^2((z-1))^{-3}) 
+    S_2(z) &= \notag(34z^2(z-1)^{-2} - 2z^2((z-1))^{-3}) 
 \end{align}
 Using results $\eqref{eq:5}$ and $\eqref{eq:7}$
 \begin{align}
- S_2(n) = (34(n+1) - n(n+1))u(n)   
+ S_2(n) &= (34(n+1) - n(n+1))u(n)   
 \end{align}
 
 \vspace{1cm}
@@ -269,13 +270,13 @@ Using results $\eqref{eq:5}$ and $\eqref{eq:7}$
 Here $x_3(0)$ = -5, $d_3$ = -3\vspace{0.05cm}
 From $\eqref{eq:2}$
 \begin{align}
--230= -5 -3n \\
-n=75
+-230 &= -5 -3n \\
+n &= 75
 \end{align}
 For $x_3(n)$
 \begin{align}
-x_3(n) = x_3(0) + nd_3\\
-x_{3(n)}=x_3(0) - 3n
+x_3(n) &= x_3(0) + nd_3\\
+x_{3(n)} &= x_3(0) - 3n
 \end{align}
 
 \begin{figure}[!ht]   
@@ -287,15 +288,15 @@ x_{3(n)}=x_3(0) - 3n
 \end{figure}
 
 \item[1)]
-\textbf{Calculating $S_3(75)$} :
+\underline{Calculating $S_3(75)$} :
 Using $\eqref{eq:1}$ :\vspace{0.05cm}
 \begin{align}
-    S_3(75)=\dfrac{76}{2}(-10+(76-1)(-3))\\
-   S_3(75)=-8930
+    S_3(75) &= \dfrac{76}{2}(-10+(76-1)(-3))\\
+   S_3(75) &= -8930
     \end{align}
 
 \item[2)] 
-\textbf{Z-Transform of $x_3(n)$} :
+\underline{Z-Transform of $x_3(n)$} :
 Putting $x_3(n)$ in $\eqref{eq:3}$
 \vspace{0.05cm}
 \begin{align}
@@ -303,25 +304,25 @@ Putting $x_3(n)$ in $\eqref{eq:3}$
 \end{align}
 For $X_3(z)$ , we use the same process as in (i) bit\vspace{0.05cm}
 \begin{align}
-  \notag -5z(z-1)^{-1}-\\
+  \notag -5z(z-1)^{-1}-
        (1.5)z((z-1))^{-2}=X_3(z) \label{eq:8}\\
            \lvert z\rvert  >  1 
 \end{align}
 
     \vspace{0.7cm}
 \item[3)]
-\textbf{Z-Transform of $S_3(n)$} :
+\underline{Z-Transform of $S_3(n)$} :
 Using $\eqref{eq:2}$ and assuming 
 \begin{align}
-         h[n]=u[n] \\
-    S_3(n) = x_3(n) * h[n] 
-    S_3(z) = X_3(z) * H_(z)
+         h[n] &= u[n] \\
+    S_3(n) &= x_3(n) * h[n] 
+    S_3(z) &= X_3(z) * H_(z)
     \end{align}
     Where $X_3(z)$ comes from $\eqref{eq:8}$ and $H_(z)$ from $\eqref{eq:9}$.
     \vspace{0.05cm}
     For $S_3(z)$ :
     \begin{align}
-            S_3(z) = (-5z(z-1)^{-1}-
+            S_3(z) &= (-5z(z-1)^{-1}-
        (1.5)z((z-1))^{-2})z(z-1)^{-1}
     \end{align}
     ROC:
@@ -330,14 +331,14 @@ Using $\eqref{eq:2}$ and assuming
     \end{align}
     
     \item[4)]
-\textbf{Inversion of $S_2(z)$} :
+\underline{Inversion of $S_2(z)$} :
 By using partial fractions 
 \begin{align}
-    S_3(z) = \notag(-5z^2(z-1)^{-2} - (1.5)z^2((z-1))^{-3}) 
+    S_3(z) &= \notag(-5z^2(z-1)^{-2} - (1.5)z^2((z-1))^{-3}) 
 \end{align}
 Using results $\eqref{eq:5}$ and $\eqref{eq:7}$
 \begin{align}
- S_3(n) = (-5(n+1) - (1.5)n(n+1))u(n)   
+ S_3(n) &= (-5(n+1) - (1.5)n(n+1))u(n)   
 \end{align}
 
   \vspace{1cm}

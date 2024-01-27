@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  25 JAN 2024 10:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  27 JAN 2024 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1274,20 +1274,20 @@ File: ts1txr.fd 2000/12/15 v3.1
 <figs//graph_1.png, id=11, 462.528pt x 346.896pt>
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
-Package pdftex.def Info: figs//graph_1.png  used on input line 97.
+Package pdftex.def Info: figs//graph_1.png  used on input line 98.
 (pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
 
 ! Undefined control sequence.
-l.98 \captionsetup
+l.99 \captionsetup
                   {Graph:1 $x_1(n)$ vs n }
 ? 
 
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 97--99
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 98--100
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
@@ -1295,79 +1295,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
 
  <./figs//graph_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-<figs//graph_2.png, id=65, 462.528pt x 346.896pt>
+<figs//graph_2.png, id=64, 462.528pt x 346.896pt>
 File: figs//graph_2.png Graphic file (type png)
 <use figs//graph_2.png>
-Package pdftex.def Info: figs//graph_2.png  used on input line 202.
+Package pdftex.def Info: figs//graph_2.png  used on input line 203.
 (pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
 ! Undefined control sequence.
-l.203 \captionsetup
+l.204 \captionsetup
                    {Graph:2 $x_2(n)$ vs n }
 ? 
 
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 202--205
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 203--206
  [][] 
  []
 
-<figs//graph_3.png, id=98, 462.528pt x 346.896pt>
+<figs//graph_3.png, id=97, 462.528pt x 346.896pt>
 File: figs//graph_3.png Graphic file (type png)
 <use figs//graph_3.png>
-Package pdftex.def Info: figs//graph_3.png  used on input line 284.
+Package pdftex.def Info: figs//graph_3.png  used on input line 285.
 (pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
 ! Undefined control sequence.
-l.285 \captionsetup
+l.286 \captionsetup
                    {Graph:3 $x_3(n)$ vs n }
 ? 
 
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 284--287
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 285--288
  [][] 
  []
 
 [2 <./figs//graph_2.png>]
-Overfull \hbox (14.47551pt too wide) detected at line 326
+Overfull \hbox (14.47551pt too wide) detected at line 327
 []
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.360 ...nit step function & \scriptsize 0 \forall
+l.361 ...nit step function & \scriptsize 0 \forall
                                                    n<0 , 1 \forall n \geq 0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.361       \hline
+l.362       \hline
                   
 ? 
 ! Undefined control sequence.
-l.370 \captionsetup
+l.371 \captionsetup
                    {Table 1 : Parameters , Descriptions And Values }
 ? 
 
-Overfull \hbox (48.36285pt too wide) in paragraph at lines 345--371
+Overfull \hbox (48.36285pt too wide) in paragraph at lines 346--372
  [] 
  []
 
 [3 <./figs//graph_3.png>] (./a1.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 29711 strings out of 478287
- 584448 string characters out of 5849290
- 855083 words of memory out of 5000000
+ 29709 strings out of 478287
+ 584434 string characters out of 5849290
+ 856088 words of memory out of 5000000
  47207 multiletter control sequences out of 15000+600000
  551498 words of font info for 206 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,10n,96p,406b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,10n,96p,406b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1376,10 +1373,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a1.pdf (3 pages, 96170 bytes).
+Output written on a1.pdf (3 pages, 94419 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
