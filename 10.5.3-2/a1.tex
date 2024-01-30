@@ -65,25 +65,37 @@ Find the sums given below:
 
 \end{enumerate}
 
- \vspace{1cm}
+ \vspace{1.5cm}
  \begin{center}
  \begin{enumerate}
 \begin{tabular}{ |c|c|c| } 
  \hline
- \scriptsize Symbols & \scriptsize Description & \scriptsize Values    \\
+Symbols & Description & Values    \\
  \hline
-  \scriptsize $d_i$ & \scriptsize Common Difference & \scriptsize 3.5, -2, -3\\ \hline
+$d_i$ & Common Difference & 3.5, -2, -3\\ 
+\hline
 
-  \scriptsize $x_i(n)$ & \scriptsize Sequence  &  \scriptsize ($x_i(0)$ +$nd_i$)$u_{(k)}$\\
+   $x_i(n)$ &  Sequence  &  \ ($x_i(0)$ +$nd_i$)$u_{(k)}$\\
    \hline
 
-     \scriptsize $X_i(z)$ & \scriptsize Z-Transform of $x_i(n)$ & \scriptsize $zx_i(0)(z-1)^{-1}+d_iz(z-1)^{-2}$ \\
+     $X_i(z)$ &  Z-Transform of $x_i(n)$ &  $zx_i(0)(z-1)^{-1}+d_iz(z-1)^{-2}$ \\
       \hline
 
-     \scriptsize $S_i(n)$ & \scriptsize Sum of (n+1)terms  & \scriptsize $\frac{(n+1)u_{(u)}}{2}(2x_i(0) + kd_i)$\\
+     $S_i(n)$ & Sum of (n+1)terms  & $\frac{(n+1)u_{(u)}}{2}(2x_i(0) + kd_i)$\\
       \hline
 
-     \scriptsize $h[n]$ & \scriptsize Unit step function & \scriptsize 0 \forall n<0 , 1 \forall n \geq 0\\
+    $h[n]$ & Unit step function & 0 \forall n<0 , 1 \forall n \geq 0\\
+    \hline
+
+     $x_1(0)$ &  First term of $x_1(n)$  &  7\\
+   \hline
+
+     $x_2(0)$ &  First term of $x_2(n)$  &  34\\
+   \hline
+   
+     $x_3(0)$ &  First term of $x_3(n)$  &  -5\\
+   \hline
+   
       \hline
 \end{tabular}
 \end{enumerate}
@@ -98,17 +110,14 @@ Find the sums given below:
 \textbf{Solutions}:
 \begin{enumerate}
 \item[(i)]   
-7 + $10\frac{1}{2}$ + 14 ... + 84
-\vspace{0.2cm}
+7 + $10\frac{1}{2}$ + 14 ... + 84.
 
-\begin{align}
-{S_n} = \frac{(n+1)u_{(n)}}{2}(2x_i(0) + nd_i)\label{eq:1}
-\end{align}
+\vspace{0.15cm}
 For number of terms , we use
 \begin{align}
-x_i(n) = (x_i(0) + nd_i)u_n\label{eq:2}
+x_i(n) = (x_i(0) + nd_i)u_{(n)}\label{eq:2}
 \end{align}
-Where $x_i(n)$ is the $(n+1)^{th}$ term of the series. Putting the values
+Putting the values
 \begin{align}  
 84 &= 7+\frac{7n}{2}\\
 n &= 22
@@ -119,15 +128,14 @@ Calculating $S_1(22)$ :
     S_1{(22)} &= \frac{23}{2}(14+(22)\frac{7}{2})
     S_1{(22)} &= 1046.5
     \end{align} 
-    \vspace{0.1cm}
 
-\vspace{0.05cm}
+\vspace{0.1cm}
 \item 
 Z-Transform of $x_1(n)$ :
 \vspace{0.2cm}
 By the Definition of Z-transform:
 \begin{align}
- \sum_{n=-\infty}^{\infty} Z^{-n}x_i(n) = X_i(Z)\label{eq:3}
+ \sum_{n=-\infty}^{\infty} z^{-n}x_i(n) = X_i(z)\label{eq:3}
  \end{align}
 \vspace{0.05cm}Putting $x_1(n)$ in $\eqref{eq:3}$ , we get \vspace{0.05cm}
 \begin{align}
@@ -137,12 +145,10 @@ By the Definition of Z-transform:
 \sum_{n=-\infty}^{\infty}(7 + \frac{7n}{2})u_{(n)}Z^{-n} &= X_1(z)
 \end{align}
 \begin{align}
-7z(z-1)^{-1}+
-7z(2(z-1))^{-2} &= X_1(z) \label{eq:4}\\
+7z(z-1)^{-1} + 7z(2(z-1))^{-2} &= X_1(z) \label{eq:4}\\
 \forall \lvert z \rvert  >  1 
 \end{align}
-    
-\vspace{0.7cm}
+\vspace{4cm}
 \item[3)]
 Z-Transform of $S_1(n)$ :
 Using $\eqref{eq:2}$ and assuming 
@@ -188,11 +194,10 @@ Using known results:\\
 \begin{align}
  S_1(n) = (7(n+1) + 1.75n(n+1))u(n)
 \end{align}
-\\
     \begin{figure}[!ht]
     \centering
 \graphicspath{ {figs/} }
-\includegraphics[width=8cm, height=6cm]{graph_1}
+\includegraphics[width=10cm, height=6cm]{graph_1}
 \captionsetup{Graph:1 $x_1(n)$ vs n }
 \end{figure}
     
