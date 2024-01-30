@@ -65,15 +65,44 @@ Find the sums given below:
 
 \end{enumerate}
 
+ \vspace{1cm}
+ \begin{center}
+ \begin{enumerate}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ \scriptsize Symbols & \scriptsize Description & \scriptsize Values    \\
+ \hline
+  \scriptsize $d_i$ & \scriptsize Common Difference & \scriptsize 3.5, -2, -3\\ \hline
+
+  \scriptsize $x_i(n)$ & \scriptsize Sequence  &  \scriptsize ($x_i(0)$ +$nd_i$)$u_{(k)}$\\
+   \hline
+
+     \scriptsize $X_i(z)$ & \scriptsize Z-Transform of $x_i(n)$ & \scriptsize $zx_i(0)(z-1)^{-1}+d_iz(z-1)^{-2}$ \\
+      \hline
+
+     \scriptsize $S_i(n)$ & \scriptsize Sum of (n+1)terms  & \scriptsize $\frac{(n+1)u_{(u)}}{2}(2x_i(0) + kd_i)$\\
+      \hline
+
+     \scriptsize $h[n]$ & \scriptsize Unit step function & \scriptsize 0 \forall n<0 , 1 \forall n \geq 0\\
+      \hline
+\end{tabular}
+\end{enumerate}
+
+
+
+\centering
+\captionsetup{Table 1 : Parameters , Descriptions And Values }
+\end{center}
+
 \vspace{0.5cm}
 \textbf{Solutions}:
 \begin{enumerate}
 \item[(i)]   
-7 + $10\dfrac{1}{2}$ + 14 ... + 84
+7 + $10\frac{1}{2}$ + 14 ... + 84
 \vspace{0.2cm}
 
 \begin{align}
-{S_n} = \dfrac{(n+1)u_{(n)}}{2}(2x_i(0) + nd_i)\label{eq:1}
+{S_n} = \frac{(n+1)u_{(n)}}{2}(2x_i(0) + nd_i)\label{eq:1}
 \end{align}
 For number of terms , we use
 \begin{align}
@@ -81,26 +110,20 @@ x_i(n) = (x_i(0) + nd_i)u_n\label{eq:2}
 \end{align}
 Where $x_i(n)$ is the $(n+1)^{th}$ term of the series. Putting the values
 \begin{align}  
-84 &= 7+\dfrac{7n}{2}\\
+84 &= 7+\frac{7n}{2}\\
 n &= 22
 \end{align}
 \item 
-\underline{Calculating $S_1(22)$} : 
+Calculating $S_1(22)$ : 
 \begin{align}
-    S_1{(22)} &= \dfrac{23}{2}(14+(22)\dfrac{7}{2})
+    S_1{(22)} &= \frac{23}{2}(14+(22)\frac{7}{2})
     S_1{(22)} &= 1046.5
     \end{align} 
     \vspace{0.1cm}
 
-    \begin{figure}[!ht]
-    \centering
-\graphicspath{ {figs/} }
-\includegraphics[width=10cm, height=6cm]{graph_1}
-\captionsetup{Graph:1 $x_1(n)$ vs n }
-\end{figure}
 \vspace{0.05cm}
 \item 
-\underline{Z-Transform of $x_1(n)$} :
+Z-Transform of $x_1(n)$ :
 \vspace{0.2cm}
 By the Definition of Z-transform:
 \begin{align}
@@ -108,10 +131,10 @@ By the Definition of Z-transform:
  \end{align}
 \vspace{0.05cm}Putting $x_1(n)$ in $\eqref{eq:3}$ , we get \vspace{0.05cm}
 \begin{align}
-     \sum_{n=-\infty}^{\infty}(x_1(0) + \dfrac{7n}{2})u_{(n)}Z^{-n} &= X_1(z)
+     \sum_{n=-\infty}^{\infty}(x_1(0) + \frac{7n}{2})u_{(n)}Z^{-n} &= X_1(z)
 \end{align}
 \begin{align}
-\sum_{n=-\infty}^{\infty}(7 + \dfrac{7n}{2})u_{(n)}Z^{-n} &= X_1(z)
+\sum_{n=-\infty}^{\infty}(7 + \frac{7n}{2})u_{(n)}Z^{-n} &= X_1(z)
 \end{align}
 \begin{align}
 7z(z-1)^{-1}+
@@ -121,7 +144,7 @@ By the Definition of Z-transform:
     
 \vspace{0.7cm}
 \item[3)]
-\underline{Z-Transform of $S_1(n)$} :
+Z-Transform of $S_1(n)$ :
 Using $\eqref{eq:2}$ and assuming 
 \begin{align}
          h(n) &= u(n) \\
@@ -145,7 +168,7 @@ S_1(z) &= \notag(7z(z-1)^{-1}+
     \end{align}
     
     \item[4)]
-\underline{Inversion of $S_1(z)$} :
+Inversion of $S_1(z)$ :
 By using partial fractions :
 \begin{align}
     S_1(z) &= \notag(7z^2(z-1)^{-2} + 7z^2(2(z-1))^{-3}) 
@@ -165,7 +188,13 @@ Using known results:\\
 \begin{align}
  S_1(n) = (7(n+1) + 1.75n(n+1))u(n)
 \end{align}
-
+\\
+    \begin{figure}[!ht]
+    \centering
+\graphicspath{ {figs/} }
+\includegraphics[width=8cm, height=6cm]{graph_1}
+\captionsetup{Graph:1 $x_1(n)$ vs n }
+\end{figure}
     
 
 
@@ -180,7 +209,7 @@ Using known results:\\
 
 \vspace{0.5cm}
 \item[(ii)]
- 34 + 32 + 30 ... + 10\vspace{0.05cm}
+ 34 + 32 + 30 ... + 10
 \vspace{0.2cm}
 
 In this bit  $x_2(0)$ = 34 , $d_2$ = -2.\\
@@ -197,26 +226,17 @@ x_2(n) &= x_2(0) -2n
 \end{align}
 
 
-\begin{figure}[!ht]
-\centering
-  \graphicspath{ {figs/} }
-\includegraphics[width=10cm, height=6cm]{graph_2}
-\captionsetup{Graph:2 $x_2(n)$ vs n }
-\label{graph:3}
-\end{figure}
-
-
 \item[1)] 
-\underline{Calculating $S_2(12)$} :
+Calculating $S_2(12)$ :
 For calculating the sum , we use $\eqref{eq:1}$
 \begin{align}
- S_2{(12)} &= \dfrac{13}{2}(64+11(-2))\\
+ S_2{(12)} &= \frac{13}{2}(64+11(-2))\\
  S_2{(12)} &= 286.
  \end{align}
 
     \vspace{0.7cm}
 \item[2)] 
-\underline{Z-Transform of $x_2(n)$} :
+Z-Transform of $x_2(n)$ :
 Using $\eqref{eq:3}$
 \vspace{0.05cm}
 \begin{align}
@@ -230,7 +250,7 @@ For $X_2(z)$
 \end{align}
 
 \item[3)]
-\underline{Z-Transform of $S_2(n)$} :
+Z-Transform of $S_2(n)$ :
 Using $\eqref{eq:2}$ and assuming 
 \begin{align}
          h[n] &= u[n] \\
@@ -250,7 +270,7 @@ Using $\eqref{eq:2}$ and assuming
     \end{align}
     
     \item[4)]
-\underline{Inversion of $S_2(z)$} :
+Inversion of $S_2(z)$ :
 By using partial fractions 
 \begin{align}
     S_2(z) &= \notag(34z^2(z-1)^{-2} - 2z^2((z-1))^{-3}) 
@@ -260,11 +280,17 @@ Using results $\eqref{eq:5}$ and $\eqref{eq:7}$
  S_2(n) &= (34(n+1) - n(n+1))u(n)   
 \end{align}
 
-\vspace{1cm}
- 
-\vspace{0.5cm}
+\begin{figure}[!ht]
+\centering
+  \graphicspath{ {figs/} }
+\includegraphics[width=10cm, height=6cm]{graph_2}
+\captionsetup{Graph:2 $x_2(n)$ vs n }
+\label{graph:3}
+\end{figure}
+
+\vspace{1.5cm} 
 \item[(iii)]
--5 + -8 + -11 ... -230\vspace{0.05cm}
+-5 + -8 + -11 ... -230
 \vspace{0.2cm}
 
 Here $x_3(0)$ = -5, $d_3$ = -3\vspace{0.05cm}
@@ -279,24 +305,17 @@ x_3(n) &= x_3(0) + nd_3\\
 x_{3(n)} &= x_3(0) - 3n
 \end{align}
 
-\begin{figure}[!ht]   
-\centering
-\graphicspath{ {figs/} }
-\includegraphics[width=10cm, height=6cm]{graph_3}
-\captionsetup{Graph:3 $x_3(n)$ vs n }
-\label{graph:4}
-\end{figure}
 
 \item[1)]
-\underline{Calculating $S_3(75)$} :
+Calculating $S_3(75)$ :
 Using $\eqref{eq:1}$ :\vspace{0.05cm}
 \begin{align}
-    S_3(75) &= \dfrac{76}{2}(-10+(76-1)(-3))\\
+    S_3(75) &= \frac{76}{2}(-10+(76-1)(-3))\\
    S_3(75) &= -8930
     \end{align}
 
 \item[2)] 
-\underline{Z-Transform of $x_3(n)$} :
+Z-Transform of $x_3(n)$ :
 Putting $x_3(n)$ in $\eqref{eq:3}$
 \vspace{0.05cm}
 \begin{align}
@@ -311,11 +330,11 @@ For $X_3(z)$ , we use the same process as in (i) bit\vspace{0.05cm}
 
     \vspace{0.7cm}
 \item[3)]
-\underline{Z-Transform of $S_3(n)$} :
+Z-Transform of $S_3(n)$ :
 Using $\eqref{eq:2}$ and assuming 
 \begin{align}
-         h[n] &= u[n] \\
-    S_3(n) &= x_3(n) * h[n] 
+         h(n) &= u(n) \\
+    S_3(n) &= x_3(n) * h(n) 
     S_3(z) &= X_3(z) * H_(z)
     \end{align}
     Where $X_3(z)$ comes from $\eqref{eq:8}$ and $H_(z)$ from $\eqref{eq:9}$.
@@ -331,44 +350,23 @@ Using $\eqref{eq:2}$ and assuming
     \end{align}
     
     \item[4)]
-\underline{Inversion of $S_2(z)$} :
+Inversion of $S_2(z)$ :
 By using partial fractions 
 \begin{align}
-    S_3(z) &= \notag(-5z^2(z-1)^{-2} - (1.5)z^2((z-1))^{-3}) 
+    S_3(z) &= \notag(-5z^2(z-1)^{-2} - 1.5z^2((z-1))^{-3}) 
 \end{align}
 Using results $\eqref{eq:5}$ and $\eqref{eq:7}$
 \begin{align}
- S_3(n) &= (-5(n+1) - (1.5)n(n+1))u(n)   
+ S_3(n) &= (-5(n+1) - 1.5n(n+1))u(n)   
 \end{align}
-
-  \vspace{1cm}
- \begin{center}
-\begin{tabular}{ |c|c|c| } 
- \hline
- Symbols & Description & Values    \\
- \hline
-  \small $d_i$ & \small Common Difference & 3.5, -2, -3\\ \hline
-
-  \small $x_i(n)$ & \small Sequence  &  \scriptsize ($x_i(0)$ +$nd_i$)$u_{(k)}$\\
-   \hline
-
-     \small $X_i(z)$ & \small Z-Transform of $x_i(n)$ & \scriptsize $zx_i(0)(z-1)^{-1}+d_iz(z-1)^{-2}$ \\
-      \hline
-
-     \small $S_i(n)$ & \scriptsize Sum of (n+1)terms in $i^{th}$ series & \scriptsize $\dfrac{(n+1)u_{(u)}}{2}(2x_i(0) + kd_i)$\\
-      \hline
-
-     \small $h[n]$ & \small Unit step function & \scriptsize 0 \forall n<0 , 1 \forall n \geq 0\\
-      \hline
-
-     \small $H(z)$ & \small Z-Transform of $h[n]$ & \small          $z(z-1)^{-1}$\\
-      \hline
-
-     \small $S_i(z)$ & \small Z-Transform of $S_i(z)$ & \small $X_i(z)$*$H(z)$\\
- \hline
-\end{tabular}
+\begin{figure}[!ht]   
 \centering
-\captionsetup{Table 1 : Parameters , Descriptions And Values }
-\end{center}
+\graphicspath{ {figs/} }
+\includegraphics[width=10cm, height=6cm]{graph_3}
+\captionsetup{Graph:3 $x_3(n)$ vs n }
+\label{graph:4}
+\end{figure}
+
+ 
 \end{enumerate}
 \end{document}
