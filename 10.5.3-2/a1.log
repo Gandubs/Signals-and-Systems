@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  30 JAN 2024 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  30 JAN 2024 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1274,7 +1274,7 @@ File: ts1txr.fd 2000/12/15 v3.1
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.87     $h[n]$ & Unit step function & 0 \forall
+l.87     $h(n)$ & Unit step function & 0 \forall
                                                  n<0 , 1 \forall n \geq 0\\
 ? 
 ! Missing $ inserted.
@@ -1283,17 +1283,41 @@ l.87     $h[n]$ & Unit step function & 0 \forall
 l.88     \hline
                
 ? 
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.99       \hline
+                 
+? 
+! You can't use `\hrule' here except with leaders.
+\hline ->\noalign {\ifnum 0=`}\fi \hrule 
+                                         \@height \arrayrulewidth \futurelet...
+l.99       \hline
+                 
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \futurelet 
+l.99       \hline
+                 
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \futurelet 
+l.99       \hline
+                 
+? 
 
 Overfull \hbox (90.30789pt too wide) in paragraph at lines 71--101
 [][] 
  []
 
 ! Undefined control sequence.
-l.106 \captionsetup
+l.103 \captionsetup
                    {Table 1 : Parameters , Descriptions And Values }
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
@@ -1304,75 +1328,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--188
 <figs//graph_1.png, id=56, 462.528pt x 346.896pt>
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
-Package pdftex.def Info: figs//graph_1.png  used on input line 200.
+Package pdftex.def Info: figs//graph_1.png  used on input line 198.
 (pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
 
 ! Undefined control sequence.
-l.201 \captionsetup
+l.199 \captionsetup
                    {Graph:1 $x_1(n)$ vs n }
 ? 
 
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 200--202
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 198--200
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-
-LaTeX Warning: Reference `eq:1' on page 2 undefined on input line 236.
-
-<figs//graph_2.png, id=86, 462.528pt x 346.896pt>
+<figs//graph_2.png, id=87, 462.528pt x 346.896pt>
 File: figs//graph_2.png Graphic file (type png)
 <use figs//graph_2.png>
-Package pdftex.def Info: figs//graph_2.png  used on input line 291.
+Package pdftex.def Info: figs//graph_2.png  used on input line 289.
 (pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
 ! Undefined control sequence.
-l.292 \captionsetup
+l.290 \captionsetup
                    {Graph:2 $x_2(n)$ vs n }
 ? 
 
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 291--294
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 289--292
  [][] 
  []
 
 [2 <./figs//graph_1.png> <./figs//graph_2.png>]
-
-LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 316.
-
-
-Overfull \hbox (14.47551pt too wide) detected at line 351
+Overfull \hbox (14.47551pt too wide) detected at line 349
 []
  []
 
-<figs//graph_3.png, id=139, 462.528pt x 346.896pt>
+<figs//graph_3.png, id=141, 462.528pt x 346.896pt>
 File: figs//graph_3.png Graphic file (type png)
 <use figs//graph_3.png>
-Package pdftex.def Info: figs//graph_3.png  used on input line 370.
+Package pdftex.def Info: figs//graph_3.png  used on input line 368.
 (pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
 ! Undefined control sequence.
-l.371 \captionsetup
+l.369 \captionsetup
                    {Graph:3 $x_3(n)$ vs n }
 ? 
 
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 370--373
+Overfull \hbox (32.54124pt too wide) in paragraph at lines 368--371
  [][] 
  []
 
 [3 <./figs//graph_3.png>] (./a1.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 29680 strings out of 478287
- 584098 string characters out of 5849290
- 860059 words of memory out of 5000000
- 47187 multiletter control sequences out of 15000+600000
+ 29683 strings out of 478287
+ 584133 string characters out of 5849290
+ 860121 words of memory out of 5000000
+ 47188 multiletter control sequences out of 15000+600000
  540010 words of font info for 178 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,9n,96p,406b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1384,10 +1398,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a1.pdf (3 pages, 94167 bytes).
+Output written on a1.pdf (3 pages, 93208 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 54 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
