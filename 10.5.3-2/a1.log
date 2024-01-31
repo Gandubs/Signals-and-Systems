@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  31 JAN 2024 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  31 JAN 2024 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen141
@@ -1271,108 +1272,131 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Overfull \hbox (165.1801pt too wide) in paragraph at lines 71--99
-[][] 
- []
 
-! Undefined control sequence.
-l.101 \captionsetup
-                   {Table 1 : Parameters , Descriptions And Values }
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \end{enumerate}
+                    
 ? 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+! Undefined control sequence.
+l.92 \captionsetup
+                  {Table 1 : Parameters , Descriptions And Values }
+? 
 
+LaTeX Warning: Reference `eq:ztrans' on page 1 undefined on input line 123.
 
-]
-Overfull \hbox (15.90895pt too wide) detected at line 175
-[]
- []
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 2 undefined on input line 176
+LaTeX Warning: Reference `eq:11.9.5.26.2' on page 2 undefined on input line 169
 .
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.3' on page 2 undefined on input line 176
+LaTeX Warning: Reference `eq:11.9.5.26.3' on page 2 undefined on input line 169
 .
 
-<figs//graph_1.png, id=48, 462.528pt x 346.896pt>
+[2]
+<figs//graph_1.png, id=60, 462.528pt x 346.896pt>
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
-Package pdftex.def Info: figs//graph_1.png  used on input line 183.
-(pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
-! Undefined control sequence.
-l.184 \captionsetup
-                   {Graph:1 $x_1(n)$ vs n }
-? 
-
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 183--186
- [][] 
- []
+Package pdftex.def Info: figs//graph_1.png  used on input line 179.
+(pdftex.def)             Requested size: 341.44667pt x 227.62346pt.
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 2 undefined on input line 265
+LaTeX Warning: Reference `eq:ztrans' on page 3 undefined on input line 214.
+
+[3 <./figs//graph_1.png>]
+
+LaTeX Warning: Reference `eq:11.9.5.26.2' on page 4 undefined on input line 252
 .
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.3' on page 2 undefined on input line 265
+LaTeX Warning: Reference `eq:11.9.5.26.3' on page 4 undefined on input line 252
 .
 
-<figs//graph_2.png, id=72, 462.528pt x 346.896pt>
+<figs//graph_2.png, id=91, 462.528pt x 346.896pt>
 File: figs//graph_2.png Graphic file (type png)
 <use figs//graph_2.png>
-Package pdftex.def Info: figs//graph_2.png  used on input line 273.
-(pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
-! Undefined control sequence.
-l.274 \captionsetup
-                   {Graph:2 $x_2(n)$ vs n }
+Package pdftex.def Info: figs//graph_2.png  used on input line 263.
+(pdftex.def)             Requested size: 341.44667pt x 227.62346pt.
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 \item[1)]
+               
 ? 
 
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 273--276
- [][] 
- []
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-[2 <./figs//graph_1.png>]
-Overfull \hbox (3.90895pt too wide) detected at line 343
-[]
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 \item[1)]
+               
+? 
 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 3 undefined on input line 344
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 \item[1)]
+               
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.289     \end{enumerate}
+                         
+? 
+
+LaTeX Warning: Reference `eq:ztrans' on page 4 undefined on input line 294.
+
+[4 <./figs//graph_2.png>]
+
+LaTeX Warning: Reference `eq:11.9.5.26.2' on page 5 undefined on input line 331
 .
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.3' on page 3 undefined on input line 344
+LaTeX Warning: Reference `eq:11.9.5.26.3' on page 5 undefined on input line 331
 .
 
-<figs//graph_3.png, id=123, 462.528pt x 346.896pt>
+<figs//graph_3.png, id=118, 462.528pt x 346.896pt>
 File: figs//graph_3.png Graphic file (type png)
 <use figs//graph_3.png>
-Package pdftex.def Info: figs//graph_3.png  used on input line 351.
-(pdftex.def)             Requested size: 284.54124pt x 170.71628pt.
-! Undefined control sequence.
-l.352 \captionsetup
-                   {Graph:3 $x_3(n)$ vs n }
-? 
-
-Overfull \hbox (32.54124pt too wide) in paragraph at lines 351--354
- [][] 
- []
-
-[3 <./figs//graph_2.png> <./figs//graph_3.png>] (./a1.aux)
+Package pdftex.def Info: figs//graph_3.png  used on input line 341.
+(pdftex.def)             Requested size: 341.44667pt x 227.62346pt.
+[5 <./figs//graph_3.png>] (./a1.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `a1.out' has not changed.
-(rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
+(rerunfilecheck)             Checksum: 2C6B03E50FF26E20669544ED0549BEB4;171.
  ) 
 Here is how much of TeX's memory you used:
- 29684 strings out of 478287
- 584207 string characters out of 5849290
- 853059 words of memory out of 5000000
- 47188 multiletter control sequences out of 15000+600000
- 540010 words of font info for 178 fonts, out of 8000000 for 9000
+ 29711 strings out of 478287
+ 584532 string characters out of 5849290
+ 845048 words of memory out of 5000000
+ 47210 multiletter control sequences out of 15000+600000
+ 548806 words of font info for 202 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,9n,96p,406b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,9n,96p,406b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1381,10 +1405,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a1.pdf (3 pages, 94045 bytes).
+Output written on a1.pdf (5 pages, 93027 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 44 words of extra memory for PDF output out of 10000 (max. 10000000)
 
