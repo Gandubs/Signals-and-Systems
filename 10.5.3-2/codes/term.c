@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    // Code to create data1.txt, data2.txt, and data3.txt files
     FILE *file1 = fopen("data1.txt", "w");
     if (file1 == NULL) {
         perror("Error creating file1");
@@ -39,6 +40,43 @@ int main() {
         fprintf(file3, "%f ", term3);
     }
     fclose(file3);
+
+    // Code to read and calculate sums from the files
+    FILE *file1_read = fopen("data1.txt", "r");
+    if (file1_read == NULL) {
+        perror("Error opening data1.txt");
+        return 1;
+    }
+    float term1, sum1 = 0.0;
+    while (fscanf(file1_read, "%f", &term1) == 1) {
+        sum1 += term1;
+    }
+    fclose(file1_read);
+    printf("Sum for x_1(n): %.1f\n", sum1);
+
+    FILE *file2_read = fopen("data2.txt", "r");
+    if (file2_read == NULL) {
+        perror("Error opening data2.txt");
+        return 1;
+    }
+    float term2, sum2 = 0.0;
+    while (fscanf(file2_read, "%f", &term2) == 1) {
+        sum2 += term2;
+    }
+    fclose(file2_read);
+    printf("Sum for x_2(n): %.1f\n", sum2);
+
+    FILE *file3_read = fopen("data3.txt", "r");
+    if (file3_read == NULL) {
+        perror("Error opening data3.txt");
+        return 1;
+    }
+    float term3, sum3 = 0.0;
+    while (fscanf(file3_read, "%f", &term3) == 1) {
+        sum3 += term3;
+    }
+    fclose(file3_read);
+    printf("Sum for x_3(n): %.1f\n", sum3);
 
     return 0;
 }
