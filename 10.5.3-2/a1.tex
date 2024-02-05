@@ -131,17 +131,14 @@ Z-Transform of $s_1(n)$ :
          h(n) &= u(n) \\
                  H_1(z) &= z(z-1)^{-1} \label{eq:ee25-9}\\
     y_1(n) &= x_1(n) * h(n) \\
-    y_1(z) &= X_1(z) * H_(z)\\
+    Y_1(z) &= X_1(z) * H_(z)\\
  &= (7z(z-1)^{-1}+
 7z(2(z-1))^{-2})z(z-1)^{-1}
 ,\quad \abs {z}>\abs{1}     
 \end{align}
         \item
-Inversion of $y_1(z)$ :
-\begin{align}
-    y_1(z) = 7(1-z^{-1})^{-1} + 7z^{-1}(1-z^{-1})^{-2} + (1.75)(z^{-2} + z^{-1})(1-z^{-1})^{-3} + (1.75)z^{-1}(1-z^{-1})^{-2}  
-\end{align}
-Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} and \eqref{eq:ee25-9} for inverse Z-transforms :
+Inversion of $Y_1(z)$ :
+Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
 \begin{align}
  y_1(n) = (7(n+1) + 1.75n(n+1))u(n)
 \end{align}
@@ -151,7 +148,7 @@ Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} and \eqref{eq:ee25-9} for 
     \centering
 \graphicspath{ {figs/} }
 \includegraphics[width=12cm, height=8cm]{graph_1}
-\caption{ $x_1(n)$ vs n }
+\caption{ $y_1(n)$ vs n }
 \label{graph:ee25-g2}
 \end{figure}
 \vspace{0.5cm}
@@ -193,18 +190,15 @@ Z-Transform of $s_2(n)$ :
 \begin{align}
          h[n] &= u[n] \\
     y_2(n) &= x_2(n) * h(n) \\
-    y_2(z) &= X_2(z) * H(z)\\
+    Y_2(z) &= X_2(z) * H(z)\\
         &= 34z(z-1)^{-1}-
        2z((z-1))^{-2})z(z-1)^{-1}
 ,\quad \abs {z}>\abs{1} 
     \end{align}
 
     \item
-Inversion of $y_2(z)$ :
-\begin{align}
-    y_2(z) = 34(1-z^{-1})^{-1} + 34z^{-1}(1-z^{-1})^{-2} - (z^{-2} + z^{-1})(1-z^{-1})^{-3} - z^{-1}(1-z^{-1})^{-2}  
-\end{align}
-Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} and \eqref{eq:ee25-9} for inverse Z-transforms :
+Inversion of $Y_2(z)$ :
+Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
 \begin{align}
  y_2(n) &= (34(n+1) - n(n+1))u(n)   
 \end{align}
@@ -216,7 +210,7 @@ Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} and \eqref{eq:ee25-9} for 
 \centering
   \graphicspath{ {figs/} }
 \includegraphics[width=12cm, height=8cm]{graph_2}
-\caption{$x_2(n)$ vs n }
+\caption{$y_2(n)$ vs n }
 \label{graph:ee25-g3}
 \end{figure}
 
@@ -254,18 +248,15 @@ Z-Transform of $s_3(n)$ :
 \begin{align}
          h(n) &= u(n) \\
     y_3(n) &= x_3(n) * h(n) \\
-    y_3(z) &= X_3(z) * H(z)\\
+    Y_3(z) &= X_3(z) * H(z)\\
              &= (-5z(z-1)^{-1}-
        3z((z-1))^{-2})z(z-1)^{-1}
 \quad \abs {z}>\abs{1} 
     \end{align}
 
     \item
-Inversion of $y_3(z)$ :
-\begin{align}
-    y_3(z) = (-5(1-z^{-1})^{-1} - 5z^{-1}(1-z^{-1})^{-2} - (1.5)(z^{-2} + z^{-1})(1-z^{-1})^{-3} - (1.5)z^{-1}(1-z^{-1})^{-2}  
-\end{align}
-Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} and \eqref{eq:ee25-9} for inverse Z-transforms :
+Inversion of $Y_3(z)$ :
+Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
 \begin{align}
  y_3(n) &= (-5(n+1) - 1.5n(n+1))u(n)   
 \end{align}
@@ -277,7 +268,7 @@ Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} and \eqref{eq:ee25-9} for 
 \centering
 \graphicspath{ {figs/} }
 \includegraphics[width=12cm, height=8cm]{graph_3}
-\caption{$x_3(n)$ vs n }\label{graph:ee25-g4}
+\caption{$y_3(n)$ vs n }\label{graph:ee25-g4}
 \end{figure}
  \end{enumerate}
 \end{document}

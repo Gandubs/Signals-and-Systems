@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  5 FEB 2024 08:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  5 FEB 2024 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1439,338 +1439,338 @@ LaTeX Warning: Reference `eq:ztrans' on page 1 undefined on input line 122.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 2 undefined on input line 144
+LaTeX Warning: Reference `eq:11.9.5.26.2' on page 2 undefined on input line 141
 .
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.3' on page 2 undefined on input line 144
+LaTeX Warning: Reference `eq:11.9.5.26.3' on page 2 undefined on input line 141
 .
 
 ! Undefined control sequence.
 \enit@endenumerate ->\enit@after 
                                  \endlist \ifx \enit@series \relax \else \if...
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...\else \ifnum \enit@resuming 
                                                   =\@ne \enit@setresumekeys ...
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 <argument> enit@resume@series@\enit@series 
                                            
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...t \fi \ifnum \enit@resuming 
                                                   =\thr@@ \enit@setresumekey...
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.148 \end{enumerate}
+l.145 \end{enumerate}
                      
 ? 
-<figs//graph_1.png, id=38, 462.528pt x 346.896pt>
+<figs//graph_1.png, id=37, 462.528pt x 320.1561pt>
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
-Package pdftex.def Info: figs//graph_1.png  used on input line 153.
-(pdftex.def)             Requested size: 341.44667pt x 227.62346pt.
+Package pdftex.def Info: figs//graph_1.png  used on input line 150.
+(pdftex.def)             Requested size: 341.44667pt x 227.62994pt.
 
-LaTeX Warning: Reference `eq:ztrans' on page 2 undefined on input line 182.
+LaTeX Warning: Reference `eq:ztrans' on page 2 undefined on input line 179.
 
 [2 <./figs//graph_1.png>]
 
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 3 undefined on input line 207
+LaTeX Warning: Reference `eq:11.9.5.26.2' on page 3 undefined on input line 201
 .
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.3' on page 3 undefined on input line 207
+LaTeX Warning: Reference `eq:11.9.5.26.3' on page 3 undefined on input line 201
 .
 
 ! Undefined control sequence.
 \enit@endenumerate ->\enit@after 
                                  \endlist \ifx \enit@series \relax \else \if...
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...\else \ifnum \enit@resuming 
                                                   =\@ne \enit@setresumekeys ...
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 <argument> enit@resume@series@\enit@series 
                                            
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...t \fi \ifnum \enit@resuming 
                                                   =\thr@@ \enit@setresumekey...
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.211 \end{enumerate}
+l.205 \end{enumerate}
                      
 ? 
-<figs//graph_2.png, id=63, 462.528pt x 346.896pt>
+<figs//graph_2.png, id=60, 462.528pt x 320.1561pt>
 File: figs//graph_2.png Graphic file (type png)
 <use figs//graph_2.png>
-Package pdftex.def Info: figs//graph_2.png  used on input line 218.
-(pdftex.def)             Requested size: 341.44667pt x 227.62346pt.
+Package pdftex.def Info: figs//graph_2.png  used on input line 212.
+(pdftex.def)             Requested size: 341.44667pt x 227.62994pt.
 
-LaTeX Warning: Reference `eq:ztrans' on page 3 undefined on input line 243.
+LaTeX Warning: Reference `eq:ztrans' on page 3 undefined on input line 237.
 
 [3 <./figs//graph_2.png>]
 
-LaTeX Warning: Reference `eq:11.9.5.26.2' on page 4 undefined on input line 268
+LaTeX Warning: Reference `eq:11.9.5.26.2' on page 4 undefined on input line 259
 .
 
 
-LaTeX Warning: Reference `eq:11.9.5.26.3' on page 4 undefined on input line 268
+LaTeX Warning: Reference `eq:11.9.5.26.3' on page 4 undefined on input line 259
 .
 
 ! Undefined control sequence.
 \enit@endenumerate ->\enit@after 
                                  \endlist \ifx \enit@series \relax \else \if...
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...\else \ifnum \enit@resuming 
                                                   =\@ne \enit@setresumekeys ...
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Undefined control sequence.
 <argument> enit@resume@series@\enit@series 
                                            
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...t \fi \ifnum \enit@resuming 
                                                   =\thr@@ \enit@setresumekey...
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.272     \end{enumerate}
+l.263     \end{enumerate}
                          
 ? 
-<figs//graph_3.png, id=85, 462.528pt x 346.896pt>
+<figs//graph_3.png, id=83, 462.528pt x 320.1561pt>
 File: figs//graph_3.png Graphic file (type png)
 <use figs//graph_3.png>
-Package pdftex.def Info: figs//graph_3.png  used on input line 279.
-(pdftex.def)             Requested size: 341.44667pt x 227.62346pt.
+Package pdftex.def Info: figs//graph_3.png  used on input line 270.
+(pdftex.def)             Requested size: 341.44667pt x 227.62994pt.
 ! Undefined control sequence.
 \enit@endenumerate ->\enit@after 
                                  \endlist \ifx \enit@series \relax \else \if...
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...\else \ifnum \enit@resuming 
                                                   =\@ne \enit@setresumekeys ...
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Undefined control sequence.
 <argument> enit@resume@series@\enit@series 
                                            
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Undefined control sequence.
 \enit@endenumerate ...t \fi \ifnum \enit@resuming 
                                                   =\thr@@ \enit@setresumekey...
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.282  \end{enumerate}
+l.273  \end{enumerate}
                       
 ? 
 [4 <./figs//graph_3.png>] (./a1.aux)
@@ -1784,9 +1784,9 @@ Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 29754 strings out of 478287
- 585544 string characters out of 5849290
- 848465 words of memory out of 5000000
+ 29751 strings out of 478287
+ 585505 string characters out of 5849290
+ 848463 words of memory out of 5000000
  47241 multiletter control sequences out of 15000+600000
  548806 words of font info for 202 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1799,10 +1799,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a1.pdf (4 pages, 92241 bytes).
+Output written on a1.pdf (4 pages, 100383 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 63 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
