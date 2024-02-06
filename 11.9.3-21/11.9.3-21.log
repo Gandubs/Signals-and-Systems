@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  6 FEB 2024 18:56
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  6 FEB 2024 14:20
+>>>>>>> 2ea1816138f4caf34f0cc4ae4a2fee568180883c
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1266,7 +1270,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
+<<<<<<< HEAD
 (./tables/table.tex
+=======
+>>>>>>> 2ea1816138f4caf34f0cc4ae4a2fee568180883c
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1274,8 +1281,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.18 \end{enumerate}
                     
+=======
+l.78 \end{enumerate}
+                    
+? 
+! Undefined control sequence.
+l.80 \captionsetup
+                  {Table 1 : Parameters , Descriptions And Values }
+>>>>>>> 2ea1816138f4caf34f0cc4ae4a2fee568180883c
 ? 
 ! Undefined control sequence.
 l.20 \captionsetup
@@ -1283,6 +1299,7 @@ l.20 \captionsetup
 ? 
 )
 
+<<<<<<< HEAD
 LaTeX Warning: Reference `eq:ztrans' on page 1 undefined on input line 75.
 
 
@@ -1299,6 +1316,14 @@ l.81 \end{enumerate}
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
 Package pdftex.def Info: figs//graph_1.png  used on input line 85.
+=======
+LaTeX Warning: Reference `eq:ztrans' on page 1 undefined on input line 104.
+
+<figs//graph_1.png, id=13, 462.528pt x 320.1561pt>
+File: figs//graph_1.png Graphic file (type png)
+<use figs//graph_1.png>
+Package pdftex.def Info: figs//graph_1.png  used on input line 114.
+>>>>>>> 2ea1816138f4caf34f0cc4ae4a2fee568180883c
 (pdftex.def)             Requested size: 341.44667pt x 227.62994pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figs//graph_1.png>
 ] (./11.9.3-21.aux)
@@ -1312,6 +1337,7 @@ Package rerunfilecheck Info: File `11.9.3-21.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  29579 strings out of 478287
  582855 string characters out of 5849290
  837876 words of memory out of 5000000
@@ -1319,6 +1345,15 @@ Here is how much of TeX's memory you used:
  546114 words of font info for 198 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,9n,96p,413b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 29580 strings out of 478287
+ 582831 string characters out of 5849290
+ 840875 words of memory out of 5000000
+ 47124 multiletter control sequences out of 15000+600000
+ 546114 words of font info for 198 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 101i,8n,96p,413b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> 2ea1816138f4caf34f0cc4ae4a2fee568180883c
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1327,10 +1362,18 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
+<<<<<<< HEAD
 Output written on 11.9.3-21.pdf (2 pages, 62122 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
+=======
+Output written on 11.9.3-21.pdf (2 pages, 60663 bytes).
+PDF statistics:
+ 87 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+>>>>>>> 2ea1816138f4caf34f0cc4ae4a2fee568180883c
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
