@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    // Code to create data1.txt, data2.txt, and data3.txt files
     FILE *file1 = fopen("data1.txt", "w");
     if (file1 == NULL) {
         perror("Error creating file1");
