@@ -1,7 +1,7 @@
 % \iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -49,7 +49,6 @@
 \author{EE23BTECH11025 - Anantha Krishnan $^{}$% <-this % stops a space
 }
 \maketitle
-\newpage
 \bigskip
 
 \renewcommand{\thefigure}{\theenumi}
@@ -58,40 +57,37 @@
 Find four numbers forming a geometric progression in which the third term is greater than the first term by 9, and the second term is greater than the $4^{th}$ by 18.\\
 
 \textbf{Solution}:
-Let's assume the 4 terms of the geometric sequences are a, ar, a{r^2}, a{r^3}.
-\\
 
-Here,the common ratio is r.
-It is given that
-
-\begin{align}
-a{r^2}-a=9\label{eq:1} \\
-ar-a{r^3}=18\label{eq:2}
+\input{tables/table.tex}
+\begin{enumerate}
+    Solving for $x\brak{0}$,$r$ :
+   \begin{align}
+x\brak{0}r^2 - 9 &= x\brak{0} \label{eq:ee25-a1}\\
+x\brak{0}r + 18 &= x\brak{0}r^3\label{eq:ee25-a2}
 \end{align}
-Now, we solve $\eqref{eq:1}$ and $\eqref{eq:2}$\\
-From $\eqref{eq:1}$
+Solving  \eqref{eq:ee25-a1} , \eqref{eq:ee25-a2}
 \begin{align}
-         a(r^2-1)=9
-         \end{align}
+    x\brak{0} &= 3\\
+    r &= -2
+\end{align}
 
-     
-\\Therefore 
-\begin{align}
-         (r^2-1)=\dfrac{9}{a}
-         \end{align}
+ Z-Transform for x\brak{n} 
+    Using $\eqref{eq:ztrans}$ :
+    \begin{align}
+    X\brak{z} &= \sum_{n=-\infty}^{\infty}\brak{3\brak{-2}^nu \brak{n}}z^{-n} \\
+    &= \frac{z}{2+z} ,\quad \abs {z}>\abs{2} 
+    \end{align}
+    
+\end{enumerate}
+    \begin{figure}[!ht]
+    \centering
+\graphicspath{ {figs/} }
+\includegraphics[width=12cm, height=8cm]{graph_1}
+\caption{ $x\brak{n}$ vs n }
+\label{graph:ee25-ag2}
+\end{figure}
 
-     \\also from $\eqref{eq:2}$
-     \begin{align}
-     ar(1-r^2)=18
-     \end{align}
-     
-     \\Putting the value of ${r^2}-1$ in the above equation gives 
-     \begin{align}
-              ar(\dfrac{-9}{a})=18
-                   \end{align}
 
-     Which in solving gives r=-2. Putting the value of r in $\eqref{eq:1}$ yields a=3.
-     Therefore , the final geometric series is 3 , -6 , 12 , -24.
 
 
 
