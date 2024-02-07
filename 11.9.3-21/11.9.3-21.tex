@@ -28,7 +28,6 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
-
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
 \newtheorem{proposition}{Proposition}[section]
@@ -57,18 +56,18 @@
 Find four numbers forming a geometric progression in which the third term is greater than the first term by 9, and the second term is greater than the $4^{th}$ by 18.\\
 
 \textbf{Solution}:
-<<<<<<< HEAD
 
-\input{tables/table.tex}
+    \input{tables/table.tex}
 \begin{enumerate}
     Solving for $x\brak{0}$,$r$ :
    \begin{align}
 x\brak{0}r^2 - 9 &= x\brak{0} \label{eq:ee25-a1}\\
 x\brak{0}r + 18 &= x\brak{0}r^3\label{eq:ee25-a2}
 \end{align}
-Solving  \eqref{eq:ee25-a1} , \eqref{eq:ee25-a2}
 \begin{align}
+    \implies
     x\brak{0} &= 3\\
+    \implies
     r &= -2
 \end{align}
 
@@ -83,75 +82,12 @@ Solving  \eqref{eq:ee25-a1} , \eqref{eq:ee25-a2}
     \begin{figure}[!ht]
     \centering
 \graphicspath{ {figs/} }
-\includegraphics[width=12cm, height=8cm]{graph_1}
+\includegraphics[width=\columnwidth]{graph_1}
 \caption{ $x\brak{n}$ vs n }
 \label{graph:ee25-ag2}
 \end{figure}
 
 
-=======
-\vspace{0.5cm}
-\begin{enumerate}
-\begin{tabular}{ |c|c|c| } 
- \hline
-Symbols & Description & Values  \\
-\hline
- $r$ & Common ratio of the GP & -2\\
- \hline
-
-  $x(n)$ & $(n+1)^{th}$ term of the Sequence & \ $x(0)r^{n}u(n)$\\
-  \hline
-
-
-  $x(0)$ & First term of the GP & 3\\
-\hline
-  
-   \hline
-\end{tabular}
-\end{enumerate}
-\centering
-\captionsetup{Table 1 : Parameters , Descriptions And Values }
-\label{table:ee25-tab2}
-\vspace{0.5cm}
-
-\begin{enumerate}
-    \item Solving for $x(0)$,$x(1)$,$x(2)$,$x(3)$ :
-   \begin{align}
-x(0)r^2 - 9 &= x(0) \label{eq:ee25-a1}\\
-x(0)r + 18 &= x(0)r^3\label{eq:ee25-a2}
-\end{align}
-Solving  \eqref{eq:ee25-a1} , \eqref{eq:ee25-a2}
-\begin{align}
-    x(0) &= 3\\
-    r &= -2
-\end{align}
-Therefore 
-\begin{align}
-    x(0) &= 3\\
-    x(1) &= -6\\
-    x(2) &= 12\\
-    x(3) &= -24
-     \end{align}
-
-    \item Z-Transform for x(n) 
-    Using $\eqref{eq:ztrans}$ :
-    \begin{align}
-    X(z) &= \sum_{n=-\infty}^{\infty}(3(-2)^nu(n))z^{-n} \\
-    &= z(2+z)^{-1} ,\quad \abs {z}>\abs{2} 
-    \end{align}
-    
-\end{enumerate}
-    \begin{figure}[!ht]
-    \centering
-\graphicspath{ {figs/} }
-\includegraphics[width=12cm, height=8cm]{graph_1}
-\caption{ $x(n)$ vs n }
-\label{graph:ee25-ag2}
-\end{figure}
-\vspace{0.5cm}
-
-
->>>>>>> 2ea1816138f4caf34f0cc4ae4a2fee568180883c
 
 
 
