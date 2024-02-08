@@ -72,49 +72,67 @@ Find the sums given below:
 
 \textbf{Solutions :}
 
-\begin{enumerate}[(i)]
+\begin{enumerate}[\brak{i}]
 \item
 $ 7 + 10\frac{1}{2} + 14 ... + 84$
 \vspace{0.5cm}
 
 \begin{align}
-x_1(n) &= (x_1(0) + nd_1)u_{(n)}\\
+x_1\brak{n} &= \brak{x_1\brak{0} + nd_1}u_{\brak{n}}\\
 84 &= 7+\frac{7n}{2}\\
 n &= 22
 \end{align}
 
 \begin{enumerate}[1.]
 \item 
-Calculating $s_1(22)$ : 
+Calculating $s_1\brak{22}$ : 
 \begin{align}
-    s_1{(22)} &= \frac{23}{2}(14+(22)\frac{7}{2})\\
+    s_1{\brak{22}} &= \frac{23}{2}\brak{14+\brak{22}\frac{7}{2}}\\
      &= 1046.5
     \end{align}
     
 \item 
-z-Transform of $x_1(n)$ :
+z-Transform of $x_1\brak{n}$ :
 Using $\eqref{eq:ztrans}$
 \begin{align}
-X_1(z) &= \sum_{n=-\infty}^{\infty}(7 + \frac{7n}{2})u_{(n)}z^{-n} \\
-&= 7z(z-1)^{-1} + 7z(2(z-1))^{-2}  \label{eq:ee25-4}
+X_1\brak{z} &= \sum_{n=-\infty}^{\infty}\brak{7 + \frac{7n}{2}}u_{\brak{n}}z^{-n} \\
+&= 7z\brak{z-1}^{-1} + 7z\brak{2\brak{z-1}}^{-2}  \label{eq:ee25-4}
 ,\quad \abs {z}>\abs{1} 
 \end{align}
 \item
-Z-Transform of $s_1(n)$ :
+Z-Transform of $s_1\brak{n}$ :
 \begin{align}
-         h(n) &= u(n) \\
-                 H_1(z) &= z(z-1)^{-1} \label{eq:ee25-9}\\
-    y_1(n) &= x_1(n) * h(n) \\
-    Y_1(z) &= X_1(z) * H_(z)\\
- &= (7z(z-1)^{-1}+
-7z(2(z-1))^{-2})z(z-1)^{-1}
+         h\brak{n} &= u\brak{n} \\
+                 H_1\brak{z} &= z\brak{z-1}^{-1} \label{eq:ee25-9}\\
+    y_1\brak{n} &= x_1\brak{n} * h\brak{n} \\
+    Y_1\brak{z} &= X_1\brak{z} * H_\brak{z}\\
+ &= \brak{7z\brak{z-1}^{-1}+
+7z\brak{2\brak{z-1}}^{-2}}z\brak{z-1}^{-1}
 ,\quad \abs {z}>\abs{1}     
 \end{align}
         \item
-Inversion of $Y_1(z)$ :
-Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
+Inversion of $Y_1\brak{z}$ :
+Using Contour Integration :
 \begin{align}
- y_1(n) = (7(n+1) + 1.75n(n+1))u(n)
+    y_1{(22)}&=\frac{1}{2\pi j}\oint_{C}Y(z) \;z^{21} \;dz  \\
+    &=\frac{1}{2\pi j}\oint_{C}\brak{\frac{7z^{23}}{\brak{z-1}^2}+
+       \frac{7z^{23}}{2\brak{z-1}^3}} \;dz 
+\end{align}
+We can observe that the pole is repeated $2$ times and thus $m=2$,
+\begin{align}
+  R_1 &=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}  \\
+    &=\frac{1}{\brak {1}!}\lim\limits_{z\to 1}\frac{d}{dz}\brak {{(z-1)}^{2}\frac{7z^{23}}{{(z-1)}^2}}   \\
+    &=7\lim\limits_{z\to 1}\frac{d}{dz}(z^{23})   \\
+    &= 161
+    \end{align}
+    We can observe that the pole is repeated $3$ times and thus $m=3$,
+    \begin{align}
+    R_2 &=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}  \\
+    &=\frac{1}{\brak {2}!}\lim\limits_{z\to 1}\frac{d^{2}}{dz^{2}}\brak {{(z-1)}^{3}\frac{\brak{7z^{13}}}{{2(z-1)}^3}}   \\
+    &=\brak{\frac{7}{4}}\lim\limits_{z\to 1}\frac{d^2}{dz^2}(z^{23})   \\
+    &= 885.5\\
+    R_1 + R_2 &= 1046.5\\
+    \implies  y_1{(22)} &= 1046.5
 \end{align}
 \end{enumerate}    
 
@@ -122,60 +140,79 @@ Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
     \centering
 \graphicspath{ {figs/} }
 \includegraphics[width=12cm, height=8cm]{graph_1}
-\caption{ $y_1(n)$ vs n }
+\caption{ $y_1\brak{n}$ vs n }
 \label{graph:ee25-g2}
 \end{figure}
 \vspace{0.5cm}
 
 
 \vspace{0.5cm}
-\item
+\item[\brak{ii}]
  34 + 32 + 30 ... + 10
 \vspace{0.5cm}
 
 \begin{align}
-x_2(n) &= (x_2(0) + nd_2)u_{(n)}\\
+x_2\brak{n} &= \brak{x_2\brak{0} + nd_2}u_{\brak{n}}\\
      10 &= 34 -2n\\
      n &= 12 
      \end{align}
 
 \begin{enumerate}[1.]
 \item
-Calculating $s_2(12)$ :
+Calculating $s_2\brak{12}$ :
 \begin{align}
- s_2{(12)} &= \frac{13}{2}(64+11(-2))\\
+ s_2{\brak{12}} &= \frac{13}{2}\brak{64+12\brak{-2}}\\
   &= 286.
  \end{align}
     \vspace{0.5cm}
 
 \item
-Z-Transform of $x_2(n)$ :
+Z-Transform of $x_2\brak{n}$ :
 Using $\eqref{eq:ztrans}$
 \begin{align}
-X_2(z) &= \sum_{n=-\infty}^{\infty}(x_2(0) -2n)u_{(n)}z^{-n} \\
-&= 34z(z-1)^{-1}-
-       2z((z-1))^{-2} \label{eq:ee25-6}
+X_2\brak{z} &= \sum_{n=-\infty}^{\infty}\brak{x_2\brak{0} -2n}u_{\brak{n}}z^{-n} \\
+&= 34z\brak{z-1}^{-1}-
+       2z\brak{\brak{z-1}}^{-2} \label{eq:ee25-6}
 ,\quad \abs {z}>\abs{1} 
 \end{align}
 
 
 \item
-Z-Transform of $s_2(n)$ :
+Z-Transform of $s_2\brak{n}$ :
 \begin{align}
          h[n] &= u[n] \\
-    y_2(n) &= x_2(n) * h(n) \\
-    Y_2(z) &= X_2(z) * H(z)\\
-        &= 34z(z-1)^{-1}-
-       2z((z-1))^{-2})z(z-1)^{-1}
+    y_2\brak{n} &= x_2\brak{n} * h\brak{n} \\
+    Y_2\brak{z} &= X_2\brak{z} * H\brak{z}\\
+        &= \brak{34z\brak{z-1}^{-1}-
+       2z\brak{\brak{z-1}}^{-2}}z\brak{z-1}^{-1}
 ,\quad \abs {z}>\abs{1} 
     \end{align}
 
     \item
-Inversion of $Y_2(z)$ :
-Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
+Inversion of $Y_2\brak{z}$ :
+ Using Contour Integration :
 \begin{align}
- y_2(n) &= (34(n+1) - n(n+1))u(n)   
+    y_2{(12)}&=\frac{1}{2\pi j}\oint_{C}Y(z) \;z^{11} \;dz  \\
+    &=\frac{1}{2\pi j}\oint_{C}\brak{\frac{34z^{13}}{\brak{z-1}^2}-
+       \frac{2z^{13}}{\brak{z-1}^3}} \;dz 
 \end{align}
+We can observe that the pole is repeated $2$ times and thus $m=2$,
+\begin{align}
+  R_1 &=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}  \\
+    &=\frac{1}{\brak {1}!}\lim\limits_{z\to 1}\frac{d}{dz}\brak {{(z-1)}^{2}\frac{34z^{13}}{{(z-1)}^2}}   \\
+    &=34\lim\limits_{z\to 1}\frac{d}{dz}(z^{13})   \\
+    &= 442
+    \end{align}
+    We can observe that the pole is repeated $3$ times and thus $m=3$,
+    \begin{align}
+    R_2 &=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}  \\
+    &=\frac{1}{\brak {2}!}\lim\limits_{z\to 1}\frac{d^{2}}{dz^{2}}\brak {{(z-1)}^{3}\frac{\brak{-2z^{13}}}{{(z-1)}^3}}   \\
+    &=-\lim\limits_{z\to 1}\frac{d^2}{dz^2}(z^{13})   \\
+    &= -156\\
+    R_1 + R_2 &= 286\\
+    \implies  y_2{(12)} &= 286
+\end{align}
+
 \end{enumerate}
 
 
@@ -184,55 +221,73 @@ Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
 \centering
   \graphicspath{ {figs/} }
 \includegraphics[width=12cm, height=8cm]{graph_2}
-\caption{$y_2(n)$ vs n }
+\caption{$y_2\brak{n}$ vs n }
 \label{graph:ee25-g3}
 \end{figure}
 
 \vspace{0.5cm} 
-\item[(iii)]
+\item[\brak{iii}]
 -5 + -8 + -11 ... -230
 \vspace{0.5cm}
 
 \begin{align}
-x_3(n) &= (x_3(0) -3n)u_{(n)}\\
+x_3\brak{n} &= \brak{x_3\brak{0} -3n}u_{\brak{n}}\\
 -230 &= -5 -3n \\
 n &= 75
 \end{align}
 \begin{enumerate}[1.]
 \item
-Calculating $s_3(75)$ :
+Calculating $s_3\brak{75}$ :
 \begin{align}
-    s_3(75) &= \frac{76}{2}(-10+(76-1)(-3))\\
+    s_3\brak{75} &= \frac{76}{2}\brak{-10+\brak{76-1}\brak{-3}}\\
     &= -8930
     \end{align}
 
 \item
-Z-Transform of $x_3(n)$ :
+Z-Transform of $x_3\brak{n}$ :
 Using $\eqref{eq:ztrans}$
 \begin{align}
-X_3(z) &= \sum_{n=-\infty}^{\infty}(x_3(0) -3n)u_{(n)}z^{-n} \\
- &=  -5z(z-1)^{-1}-
-       3z((z-1))^{-2} \label{eq:ee25-8}
+X_3\brak{z} &= \sum_{n=-\infty}^{\infty}\brak{x_3\brak{0} -3n}u_{\brak{n}}z^{-n} \\
+ &=  -5z\brak{z-1}^{-1}-
+       3z\brak{\brak{z-1}}^{-2} \label{eq:ee25-8}
 ,\quad \abs {z}>\abs{1} 
 \end{align}
 
     \vspace{0.5cm}
 \item
-Z-Transform of $s_3(n)$ :
+Z-Transform of $s_3\brak{n}$ :
 \begin{align}
-         h(n) &= u(n) \\
-    y_3(n) &= x_3(n) * h(n) \\
-    Y_3(z) &= X_3(z) * H(z)\\
-             &= (-5z(z-1)^{-1}-
-       3z((z-1))^{-2})z(z-1)^{-1}
+         h\brak{n} &= u\brak{n} \\
+    y_3\brak{n} &= x_3\brak{n} * h\brak{n} \\
+    Y_3\brak{z} &= X_3\brak{z} * H\brak{z}\\
+             &= \brak{-5z\brak{z-1}^{-1}-
+       3z\brak{\brak{z-1}}^{-2}}z\brak{z-1}^{-1}
 \quad \abs {z}>\abs{1} 
     \end{align}
 
     \item
-Inversion of $Y_3(z)$ :
-Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
+Inversion of $Y_3\brak{z}$ :
+Using Contour Integration :
 \begin{align}
- y_3(n) &= (-5(n+1) - 1.5n(n+1))u(n)   
+    y_3{(75)}&=\frac{1}{2\pi j}\oint_{C}Y(z) \;z^{74} \;dz  \\
+    &=\frac{1}{2\pi j}\oint_{C}\brak{\frac{-5z^{76}}{\brak{z-1}^2}-
+       \frac{3z^{76}}{\brak{z-1}^3}} \;dz 
+\end{align}
+We can observe that the pole is repeated $2$ times and thus $m=2$,
+\begin{align}
+    R_1 &=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}  \\
+    &=\frac{1}{\brak {1}!}\lim\limits_{z\to 1}\frac{d}{dz}\brak {{(z-1)}^{2}\frac{-5z^{76}}{{(z-1)}^2}}   \\
+    &=-5\lim\limits_{z\to 1}\frac{d}{dz}(z^{76})   \\
+    &= -380
+        \end{align}
+  We can observe that the pole is repeated $3$ times and thus $m=3$,
+    \begin{align}
+    R_2 &=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}  \\
+    &=\frac{1}{\brak {2}!}\lim\limits_{z\to 1}\frac{d^{2}}{dz^{2}}\brak {{(z-1)}^{3}\frac{3z^{76}}{{(z-1)}^3}}   \\
+    &=1.5\lim\limits_{z\to 1}\frac{d^2}{dz^2}(z^{76})   \\
+    &= -8550\\
+    R_1 + R_2 &= -8930\\
+    \implies  y_3{(75)} &= -8930
 \end{align}
     \end{enumerate}
 
@@ -242,7 +297,7 @@ Using \eqref{eq:11.9.5.26.2} , \eqref{eq:11.9.5.26.3} for inverse Z-transforms :
 \centering
 \graphicspath{ {figs/} }
 \includegraphics[width=12cm, height=8cm]{graph_3}
-\caption{$y_3(n)$ vs n }\label{graph:ee25-g4}
+\caption{$y_3\brak{n}$ vs n }\label{graph:ee25-g4}
 \end{figure}
  \end{enumerate}
 \end{document}
