@@ -6,16 +6,8 @@ data1 = np.loadtxt('data1.txt')
 x_values = data1[:5]
 
 highlight_indices = np.arange(4)
-
 plt.stem(range(5), x_values, basefmt=" ", label='x(n)')
-plt.stem(highlight_indices, [x_values[i] for i in highlight_indices], linefmt='r', markerfmt='ro' , label='First 4 terms of GP')
-plt.xlabel('n')
-plt.ylabel('x(n)')
-plt.legend()
-
-plt.xlim(-0.5, 4.5)
-plt.ylim(min(x_values) - 1, max(x_values) + 1)
-plt.grid(True)
+plt.stem(highlight_indices, x_values[highlight_indices], linefmt='r', markerfmt='ro', label='First 4 terms of GP')
 
 x_0 = 3
 r = -2
@@ -33,8 +25,11 @@ plt.xlabel('n')
 plt.ylabel('x(n)')  
 plt.xlim(-1, 6)  
 plt.ylim(min(x_values) - 0.5, max(x_values) + 0.5)  
+
 plt.grid(True)  
 plt.axhline(0, color='black', linewidth=0.5) 
 plt.axvline(0, color='black', linewidth=0.5)  
+
+plt.legend()
 plt.show()
 
