@@ -20,7 +20,6 @@
 \usepackage{gvv}    
 \usepackage{enumitem}
 \usepackage{amsmath}
-\usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
@@ -58,15 +57,15 @@
 
 
 \section{question}
-\vspace{0.5cm}
+
 Find the sums given below:
 \begin{enumerate}
-    \item  7 + 10.5 + 14 ... + 84
-    \item  34 + 32 + 30 ... + 10
-    \item  -5 + -8 + -11 ... -230
+    \item  $7 + \frac{21}{2} + 14 ... + 84$
+    \item  $34 + 32 + 30 ... + 10$
+    \item  $-5 + -8 + -11 ... -230$
 \end{enumerate}
 
- \vspace{0.5cm}
+ 
 
 \input{tables/table1.tex}
 
@@ -74,13 +73,13 @@ Find the sums given below:
 
 \begin{enumerate}
 \item
-$ 7 + 10\frac{1}{2} + 14 ... + 84$
-\vspace{0.5cm}
+$ 7 + \frac{21}{2} + 14 ... + 84$
+
 
 \begin{align}
 x_1\brak{n} &= \brak{x_1\brak{0} + nd_1}u_{\brak{n}}\\
-84 &= 7+\frac{7n}{2}\\
-n &= 22
+\implies 84 &= 7+\frac{7n}{2}\\
+\implies n &= 22
 \end{align}
 
 \begin{enumerate}    
@@ -119,9 +118,9 @@ Using Contour Integration :
     \begin{align}
     R_2 &=\frac{1}{\brak {2}!}\lim\limits_{z\to 1}\frac{d^{2}}{dz^{2}}\brak {{(z-1)}^{3}\frac{\brak{7z^{13}}}{{2(z-1)}^3}}   \\
     &=\brak{\frac{7}{4}}\lim\limits_{z\to 1}\frac{d^2}{dz^2}(z^{23})   \\
-    &= 885.5\\
-    R_1 + R_2 &= 1046.5\\
-    \implies  y_1{(22)} &= 1046.5
+    &= \frac{1771}{2}\\
+    R_1 + R_2 &= \frac{2093}{2}\\
+    \implies  y_1{(22)} &= \frac{2093}{2}
 \end{align}
 \end{enumerate}   
 
@@ -132,18 +131,18 @@ Using Contour Integration :
 \caption{ $y_1\brak{n}$ vs n }
 \label{graph:ee25-g2}
 \end{figure}
-\vspace{0.5cm}
 
 
-\vspace{0.5cm}
+
+
 \item
  34 + 32 + 30 ... + 10
-\vspace{0.5cm}
+
 
 \begin{align}
 x_2\brak{n} &= \brak{x_2\brak{0} + nd_2}u_{\brak{n}}\\
-     10 &= 34 -2n\\
-     n &= 12 
+     \implies 10 &= 34 -2n\\
+     \implies n &= 12 
      \end{align}
 
 \begin{enumerate}
@@ -203,15 +202,15 @@ For $R_1$ , $m=2$ :
 \label{graph:ee25-g3}
 \end{figure}
 
-\vspace{0.5cm} 
+ 
 \item
 -5 + -8 + -11 ... -230
-\vspace{0.5cm}
+
 
 \begin{align}
 x_3\brak{n} &= \brak{x_3\brak{0} -3n}u_{\brak{n}}\\
--230 &= -5 -3n \\
-n &= 75
+\implies -230 &= -5 -3n \\
+\implies n &= 75
 \end{align}
 \begin{enumerate}
 \item
@@ -223,7 +222,7 @@ X_3\brak{z} &=  \frac{-5z}{\brak{z-1}^{1}} -
 ,\quad \abs {z}>\abs{1} 
 \end{align}
 
-    \vspace{0.5cm}
+    
 \item
 Z-Transform of $y_3\brak{n}$ :
 \begin{align}
