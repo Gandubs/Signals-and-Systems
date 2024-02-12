@@ -71,32 +71,18 @@ The laplace transform of $x_1(t)$ = $e^{-t}u(t)$ is $X_1(s)$, where $u(t)$ is th
 
 \textbf{Solutions :}
 %\fi
-\begin{table}[ht!]
-\centering
-\begin{tabular}{ |c|c|c| } 
- \hline
-Symbols & Description & Values  \\
-\hline
- $r$ & Common ratio of the GP & -2\\
- \hline
- $x(n)$ & $(n+1)^{th}$ term of the Sequence & $x(0)r^{n}u(n)$\\
- \hline
- $x(0)$ & First term of the GP & 3\\
-\hline
-\end{tabular}
-\caption{Parameters, Descriptions, and Values}
-\label{table:ee25-tab3}
-\end{table}
-
+    \input{tables/table2.tex}
 Laplace transform of $x_1(t)$ is given by :
 \begin{align}
-    X_1(s) =  \int_{-\infty}^{\infty} e^{-t}e^{-st}u(t) \,dt
-&= \frac{1}{s-1} , s > -1
+    X_1(s) &=  \int_{-\infty}^{\infty} e^{-t}e^{-st}u(t) \,dt\\
+       &=  \left[\frac{-e^{t\brak{s+1}}}{s+1}\right]_{0}^{\infty}\\
+&= \frac{1}{s+1} , s > -1
 \end{align}
 Laplace transform of $x_2(t)$ is given by :
 \begin{align}
-    X_2(s) =  \int_{-\infty}^{\infty} e^{t}e^{-st}u(-t) \,dt
-&= \frac{-1}{s-1} , s < 1
+    X_2(s) &=  \int_{-\infty}^{\infty} e^{t}e^{-st}u(-t) \,dt\\
+     &=  \left[\frac{e^{t\brak{1-s}}}{1-s}\right]_{-\infty}^{0}\\
+&= \frac{1}{1-s} , s < 1
 \end{align}
 Based on the regions of convergence of  $X_1(s)$ and $X_2(s)$ , we can conclude that option 4) is correct .  
 
