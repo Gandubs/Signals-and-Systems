@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  12 FEB 2024 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  12 FEB 2024 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,30 +1273,21 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 File: ts1txr.fd 2000/12/15 v3.1
 )
 (./tables/table2.tex)
-<figs//graph_1.png, id=7, 462.528pt x 320.1561pt>
+<figs//graph_1.png, id=11, 462.528pt x 320.1561pt>
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
 Package pdftex.def Info: figs//graph_1.png  used on input line 91.
 (pdftex.def)             Requested size: 516.0pt x 357.18498pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 [2 <./figs//graph_1.png>] (./bm39.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `bm39.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bm39.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  F83D2C5E023CCD610E2311DC533FCE6B;83.
+Package rerunfilecheck Info: File `bm39.out' has not changed.
+(rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 29642 strings out of 478287
- 583802 string characters out of 5849290
- 840779 words of memory out of 5000000
- 47178 multiletter control sequences out of 15000+600000
+ 29644 strings out of 478287
+ 583815 string characters out of 5849290
+ 840877 words of memory out of 5000000
+ 47180 multiletter control sequences out of 15000+600000
  548484 words of font info for 202 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,11n,96p,408b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1308,10 +1299,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bm39.pdf (2 pages, 60266 bytes).
+Output written on bm39.pdf (2 pages, 61778 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
