@@ -24,7 +24,7 @@ plt.gca().set_aspect('equal', adjustable='box')
 
 red_patch = mpatches.Patch(color=red, label=r'$\text{ROC of X1(s)} < -1$')
 dark_purple_patch = mpatches.Patch(color=dark_purple, label=r'$\text{-1} < \text{Common ROC} < 1$')
-blue_patch = mpatches.Patch(color=blue, label=r'$\text{ROC of X2(s)}(s) > 1$')
+blue_patch = mpatches.Patch(color=blue, label=r'$\text{ROC of X2(s)} > 1$')
 green_line = mpatches.Patch(color=green, label='Im axis')
 
 plt.legend(handles=[red_patch, dark_purple_patch, blue_patch, green_line])
