@@ -62,8 +62,12 @@ Find four numbers forming a geometric progression in which the third term is gre
 From the constraints given in \ref{table:ee25-tab2}:
    \begin{align}
 x\brak{0}r^2 - 9 &= x\brak{0} \label{eq:ee25-a1}\\
-x\brak{0}r + 18 &= x\brak{0}r^3\label{eq:ee25-a2}
+x\brak{0}r + 18 &= x\brak{0}r^3 \label{eq:ee25-a2}\\
+\implies x(0)(r^2-1) &= 9 \label{eq:ee25-a3}\\
+\implies x (0)r(r^2-1) &=18
+\label{eq:ee25-a4}
 \end{align}
+By dividing $\eqref{eq:ee25-a3}$ and $\eqref{eq:ee25-a4}$ and solving ,we get: 
 \begin{align}
     \implies
     x\brak{0} &= 3\\
@@ -71,10 +75,10 @@ x\brak{0}r + 18 &= x\brak{0}r^3\label{eq:ee25-a2}
     r &= -2
 \end{align}
 
- Z-Transform for x\brak{n} 
+ Z-Transform for x\brak{n} :
     Using $\eqref{eq:ztrans}$ :
     \begin{align}
-    X\brak{z} &= \frac{z}{2+z} ,\quad \abs {z}>\abs{2} 
+    X\brak{z} &= \brak{1+2z^{-1}}^{-1} ,\quad \abs {z}>\abs{2} 
     \end{align}
     
 \end{enumerate}

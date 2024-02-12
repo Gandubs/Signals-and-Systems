@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  11 FEB 2024 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  12 FEB 2024 20:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1268,7 +1268,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
 (./tables/table.tex)
 
-LaTeX Warning: Reference `eq:ztrans' on page 1 undefined on input line 75.
+LaTeX Warning: Reference `eq:ztrans' on page 1 undefined on input line 79.
 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -1277,13 +1277,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \end{enumerate}
+l.84 \end{enumerate}
                     
 ? 
-<figs//graph_1.png, id=12, 462.528pt x 320.1561pt>
+<figs//graph_1.png, id=20, 462.528pt x 320.1561pt>
 File: figs//graph_1.png Graphic file (type png)
 <use figs//graph_1.png>
-Package pdftex.def Info: figs//graph_1.png  used on input line 84.
+Package pdftex.def Info: figs//graph_1.png  used on input line 88.
 (pdftex.def)             Requested size: 516.0pt x 357.18498pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figs//graph_1.png>
 ] (./11.9.3-21.aux)
@@ -1294,10 +1294,10 @@ Package rerunfilecheck Info: File `11.9.3-21.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 29583 strings out of 478287
- 582882 string characters out of 5849290
- 836902 words of memory out of 5000000
- 47127 multiletter control sequences out of 15000+600000
+ 29587 strings out of 478287
+ 582930 string characters out of 5849290
+ 839970 words of memory out of 5000000
+ 47129 multiletter control sequences out of 15000+600000
  548544 words of font info for 202 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,10n,96p,413b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1305,13 +1305,14 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
-fonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 11.9.3-21.pdf (2 pages, 60440 bytes).
+fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 11.9.3-21.pdf (2 pages, 63056 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
