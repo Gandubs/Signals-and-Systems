@@ -81,9 +81,10 @@ Laplace transform of $x_1(t)$ is given by :
  X_1(s) &= \int_{0}^{\infty}e^{-t\brak{\sigma+1}}e^{-tj\beta} \,dt\\
        &=  \left[\frac{-e^{-t\brak{\sigma+1}}e^{-tj\beta}}{\brak{\sigma+1}+j\beta}\right]_{0}^{\infty}  \\
        \end{align}
-        For $X_1(s)$ to be convergent,$-e^{-t\brak{\sigma+1}}$ and $e^{-tj\beta}$ must converge $\forall t \epsilon \brak{0,\infty}$, so:
+        For $X_1(s)$ to be convergent,$\quad\abs{-e^{-t\brak{\sigma+1}}e^{-tj\beta}}$ must converge $\forall t \epsilon \brak{0,\infty}$, so:
         \begin{align}
-\sigma + 1 > 0 \implies  Re\brak{s}>-1 \\  \quad\abs{e^{-tj\beta}} < \abs{1}, \forall \beta \epsilon \mathbb{R} \implies Im\brak{s} \epsilon \mathbb{R}
+\quad\abs{e^{-tj\beta}} = \abs{1}, \forall \beta \epsilon \mathbb{R} \implies Im\brak{s} \epsilon \mathbb{R}\\
+\sigma + 1 > 0 \implies  Re\brak{s}>-1   
         \end{align}
 Putting the limits :
        \begin{align}
@@ -92,12 +93,16 @@ X_1(s)&= \frac{1}{s+1} , \\ &\text{ROC of $X_1(s)$ :} Re\brak{s} > -1
 Laplace transform of $x_2(t)$ is given by :
 \begin{align}
     X_2(s) &=  \int_{-\infty}^{\infty} e^{t}e^{-st}u(-t) \,dt\\
+        \end{align}
+    Let $s=\sigma+j\omega$ :
+\begin{align}
     &= \int_{-\infty}^{0}e^{t\brak{1-\sigma}}e^{-tj\beta} \,dt\\
       &=  \left[\frac{e^{t\brak{1-\sigma}}e^{-tj\beta}}{\brak{1-\sigma}-j\beta}\right]_{-\infty}^{0}  
      \end{align}
-      For $X_2(s)$ to be convergent,$e^{-t\brak{1-\sigma}}$ and $e^{-tj\beta}$ must converge $\forall t\epsilon\brak{-\infty,0}$, so:
+      For $X_2(s)$ to be convergent,$\quad\abs{e^{t\brak{1-\sigma}}e^{-tj\beta}}$ must converge $\forall t\epsilon\brak{-\infty,0}$, so:
      \begin{align}
-1-\sigma > 0 \implies  Re\brak{s} < 1 \\  \quad\abs{e^{-tj\beta}} < \abs{1}, \forall \beta \epsilon \mathbb{R} \implies Im\brak{s} \epsilon \mathbb{R}
+\quad\abs{e^{-tj\beta}} = \abs{1}, \forall \beta \epsilon \mathbb{R} \implies Im\brak{s} \epsilon \mathbb{R}\\
+1-\sigma > 0 \implies  Re\brak{s} < 1 
         \end{align}
 Putting the limits 
      \begin{align}
