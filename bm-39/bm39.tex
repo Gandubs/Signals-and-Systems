@@ -72,6 +72,8 @@ The laplace transform of $x_1(t)$ = $e^{-t}u(t)$ is $X_1(s)$, where $u(t)$ is th
 \textbf{Solutions :}
 %\fi
     \input{tables/table2.tex}
+    \begin{enumerate}
+        \item 
 Laplace transform of $x_1(t)$ is given by :
 \begin{align}
     X_1(s) &=  \int_{-\infty}^{\infty} e^{-t}e^{-st}u(t) \,dt
@@ -84,12 +86,13 @@ Laplace transform of $x_1(t)$ is given by :
         For $X_1(s)$ to be convergent,$\quad\abs{-e^{-t\brak{\sigma+1}}e^{-tj\beta}}$ must converge $\forall t \epsilon \brak{0,\infty}$, so:
         \begin{align}
 \quad\abs{e^{-tj\beta}} = \abs{1}, \forall \beta \epsilon \mathbb{R} \implies Im\brak{s} \epsilon \mathbb{R}\\
-\sigma + 1 > 0 \implies  Re\brak{s}>-1   
+\sigma + 1 > 0 \implies  \Re\brak{s}>-1   
         \end{align}
 Putting the limits :
        \begin{align}
-X_1(s)&= \frac{1}{s+1} , \\ &\text{ROC of $X_1(s)$ :} Re\brak{s} > -1
+X_1(s)&= \frac{1}{s+1} , \Re\brak{s} > -1 
 \end{align}
+\item  
 Laplace transform of $x_2(t)$ is given by :
 \begin{align}
     X_2(s) &=  \int_{-\infty}^{\infty} e^{t}e^{-st}u(-t) \,dt
@@ -102,13 +105,12 @@ Laplace transform of $x_2(t)$ is given by :
       For $X_2(s)$ to be convergent,$\quad\abs{e^{t\brak{1-\sigma}}e^{-tj\beta}}$ must converge $\forall t\epsilon\brak{-\infty,0}$, so:
      \begin{align}
 \quad\abs{e^{-tj\beta}} = \abs{1}, \forall \beta \epsilon \mathbb{R} \implies Im\brak{s} \epsilon \mathbb{R}\\
-1-\sigma > 0 \implies  Re\brak{s} < 1 
+1-\sigma > 0 \implies  \Re\brak{s} < 1 
         \end{align}
 Putting the limits 
      \begin{align}
-            X_2(s)&= \frac{1}{1-s} , \\ &\text{ROC of $X_2(s)$ : }Re\brak{s} < 1
+            X_2(s)&= \frac{1}{1-s} , \Re\brak{s} < 1
 \end{align}
-\\
 \begin{figure}[h!]
 \begin{center}
     \begin{tikzpicture}
@@ -140,6 +142,7 @@ Putting the limits
 
 
 Based on the overlap of regions of convergence of  $X_1(s)$ and $X_2(s)$ from \ref{fig:ee23-b1} , we can conclude that option 4) is correct .  
+    \end{enumerate}
 
 
 
