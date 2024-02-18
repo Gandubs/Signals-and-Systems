@@ -80,13 +80,13 @@ For the Inverse Laplace transform of $\mathscr{L}\brak{\theta(t)}$: Using Bromwi
  \theta(t) &= \frac{1}{2\pi j}\int_{c-j\infty}^{c+j\infty}\mathscr{L}\brak{\theta(t)}e^{st}\,dt , c > 0\\
  &= \frac{1}{2\pi j}\int_{c-j\infty}^{c+j\infty}\frac{\theta'(0)e^{st}}{s^2+\frac{\alpha}{I}}\,dt
 \end{align}
-Since the poles $s=j\sqrt{\frac{\alpha}{I}}$ and $s=-j\sqrt{\frac{\alpha}{I}}$ (both non repeated, i.e. $m=1$) lie inside a semicircle for some $c>0$. Using Jordans lemma and method of residues :
+Since the poles $s=j\sqrt{\frac{\alpha}{I}}$ and $s=-j\sqrt{\frac{\alpha}{I}}$ (both non repeated, i.e. $m=1$) lie inside a semicircle for some $c>0$. Using Jordans lemma and method of residues from \ref{table:ee25-tab3} :
 \begin{align}
       R_1&=\lim\limits_{s\to j\sqrt{\frac{\alpha}{I}}}\brak {{\brak{s-j\sqrt{\frac{\alpha}{I}}}}\brak{\frac{\theta'(0)}{s^2+\frac{\alpha}{I}}} e^{st}}\\
 &={\brak{\frac{\theta'(0)Ie^{j\sqrt{\frac{\alpha}{I}}t}}{2j\alpha}}}\\
   R_2&=\lim\limits_{s\to -j\sqrt{\frac{\alpha}{I}}}\brak {{\brak{s+j\sqrt{\frac{\alpha}{I}}}}\brak{\frac{\theta'(0)}{s^2+\frac{\alpha}{I}}} e^{st}}\\
 &={\brak{\frac{-\theta'(0)Ie^{-j\sqrt{\frac{\alpha}{I}}t}}{2j\alpha}}}\\
-R &= R_1 + R_2\\
+\theta(t) &= R_1 + R_2\\
 \theta(t) &= {\brak{\frac{\theta'(0)I\brak{e^{j\sqrt{\frac{\alpha}{I}}t}-e^{-j\sqrt{\frac{\alpha}{I}}t}}}{2j\alpha}}}\\
 \implies
 \theta(t) &=\theta'(0)\sin{\brak{t\sqrt{\frac{\alpha}{I}}}}
