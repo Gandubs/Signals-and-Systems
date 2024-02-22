@@ -99,14 +99,12 @@ A series RLC circuit is connected to 220 V, 50 Hz supply. For a fixed a value of
 	\end{circuitikz}
  \end{center}
     \end{enumerate}
-\begin{enumerate}
-\item 
 During maximum current$\quad\abs{Z_{net}}$ is minimum .
 \begin{align}
-I &= \frac{V}{Z_{net}}\\
- &= \frac{V}{R+\chi(L)+\chi(C)}\label{eq:ee25-gate2-1}\\ 
-\quad \abs{I}&=\quad \abs{\frac{V}{R+j\omega L+\frac{1}{j\omega C}}}\\
-&={\frac{\quad \abs{V}}{\sqrt{R+\brak{\omega L-\frac{1}{\omega C}^2}}}}
+I &= \frac{V_s}{Z_{net}}\\
+ &= \frac{V_s}{R+\chi_{L}+\chi_{C}}\\ 
+\quad \abs{I}&=\quad \abs{\frac{V_s}{R+j\omega L+\frac{1}{j\omega C}}}\\
+&={\frac{\quad \abs{V_s}}{\sqrt{R+\brak{\omega L-\frac{1}{\omega C}^2}}}}\label{eq:ee25-gate2-1}
 \end{align}
 Varying $L$ for maximum value of $I$ :
 \begin{align}
@@ -114,22 +112,29 @@ Varying $L$ for maximum value of $I$ :
 \end{align}
 Putting in $\eqref{eq:ee25-gate2-1}$:
 \begin{align}
-    I_{max} &= \frac{V}{R}
+    I_{max} &= \frac{V_s}{R}
 \end{align}
-$I_{max}$ has same phase as $V$ (Assume $\angle{\phi})$.
+$I_{max}$ has same phase as $V_s$ (Assume $\angle{\phi})$.
 For impedance across the capacitor :
 \begin{align}
- \left.V(C)\right|_{I=I_{max}}&= I_{max} \chi(C)\\
--330\angle{\brak{90+\phi}} &= 0.4\angle{\phi}\chi(C)\\
--330\angle{90} &= 0.4\chi(C)\\
-\implies \chi(C) &= -825j\si{\ohm}
+ \left.V_C\right|_{I=I_{max}}&= I_{max} \chi_C\\
+-330\angle{\brak{90+\phi}} &= \brak{0.4\angle{\phi}}\chi_C\\
+-330\angle{90} &= 0.4\chi_C\\
+\implies \chi_C &= -825j\si{\ohm}
 \end{align}
 For value of inductor, using \eqref{eq:ee25-gate2-2} :
 \begin{align}
-L &= \frac{-825}{100\pi}H\\
+L &= \frac{825}{100\pi}H\\
 &\approx 2.63 \si{H}
 \end{align}
-\end{enumerate}
+
+    \begin{figure}[!ht]    
+    \centering
+\graphicspath{ {figs/} }
+\includegraphics[width=\columnwidth]{graph_1}
+\caption{ $I$ vs $L$ }
+\label{graph:ee25-gate2-graph}
+\end{figure}
 
 
 
