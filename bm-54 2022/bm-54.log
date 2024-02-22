@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  22 FEB 2024 19:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  22 FEB 2024 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1360,27 +1360,37 @@ l.126 \end{align}
 l.126 \end{align}
                  
 ? 
+
+LaTeX Warning: Reference `eq:ee25-gate2-2' on page 2 undefined on input line 12
+7.
+
 ! Undefined control sequence.
 <argument> ...-825}{100\pi }H\\ &\approx 2.63 \si 
                                                   {H} 
-l.133 \end{align}
+l.131 \end{align}
                  
 ? 
 ! Undefined control sequence.
 <argument> ...-825}{100\pi }H\\ &\approx 2.63 \si 
                                                   {H} 
-l.133 \end{align}
+l.131 \end{align}
                  
 ? 
 [2] (./bm-54.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `bm-54.out' has not changed.
 (rerunfilecheck)             Checksum: F83D2C5E023CCD610E2311DC533FCE6B;83.
  ) 
 Here is how much of TeX's memory you used:
- 43779 strings out of 478287
- 1016537 string characters out of 5849290
+ 43778 strings out of 478287
+ 1016528 string characters out of 5849290
  1503789 words of memory out of 5000000
- 61252 multiletter control sequences out of 15000+600000
+ 61253 multiletter control sequences out of 15000+600000
  550178 words of font info for 205 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,15n,94p,430b,1025s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1394,10 +1404,10 @@ are/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on bm-54.pdf (2 pages, 59833 bytes).
+Output written on bm-54.pdf (2 pages, 60660 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

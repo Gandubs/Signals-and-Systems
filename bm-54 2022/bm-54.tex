@@ -110,7 +110,7 @@ I &= \frac{V}{Z_{net}}\\
 \end{align}
 Varying $L$ for maximum value of $I$ :
 \begin{align}
-\omega L = \frac{1}{\omega C}
+\omega L = \frac{1}{\omega C} \label{eq:ee25-gate2-2}
 \end{align}
 Putting in $\eqref{eq:ee25-gate2-1}$:
 \begin{align}
@@ -124,11 +124,9 @@ For impedance across the capacitor :
 -330\angle{90} &= 0.4\chi(C)\\
 \implies \chi(C) &= -825j\si{\ohm}
 \end{align}
-For value of inductor :
+For value of inductor, using \eqref{eq:ee25-gate2-2} :
 \begin{align}
-\quad \abs{j\omega L} &= \quad \abs{\frac{1}{j\omega C}}\\
-L &= \frac{1}{\omega^2C}\\
-&= \frac{-825}{100\pi}H\\
+L &= \frac{-825}{100\pi}H\\
 &\approx 2.63 \si{H}
 \end{align}
 \end{enumerate}
