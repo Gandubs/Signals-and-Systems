@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  22 FEB 2024 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.2)  22 FEB 2024 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1361,13 +1361,13 @@ l.126 \end{align}
                  
 ? 
 ! Undefined control sequence.
-<argument> ...825j}{100\pi }H\\ &\approx 2.63 \si 
+<argument> ...-825}{100\pi }H\\ &\approx 2.63 \si 
                                                   {H} 
 l.133 \end{align}
                  
 ? 
 ! Undefined control sequence.
-<argument> ...825j}{100\pi }H\\ &\approx 2.63 \si 
+<argument> ...-825}{100\pi }H\\ &\approx 2.63 \si 
                                                   {H} 
 l.133 \end{align}
                  
@@ -1394,7 +1394,7 @@ are/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on bm-54.pdf (2 pages, 59851 bytes).
+Output written on bm-54.pdf (2 pages, 59833 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
