@@ -10,8 +10,12 @@ x_euler, y_euler = data_euler[:, 0], data_euler[:, 1]
 plt.plot(t_original, y_original, color='blue', label='y(x)')
 plt.scatter(1.4, -np.exp(-1.4 + 1) + 4 + 4 * (1.4 - 1), color='blue', marker='o', label='f(1.4) = {:.4f}'.format(-np.exp(-1.4 + 1) + 4 + 4 * (1.4 - 1)))
 
-plt.stem(x_euler, y_euler, linefmt='r-', markerfmt='ro', basefmt=' ', label='g(x)')
-plt.scatter(1.4, y_euler[np.where(x_euler == 1.4)[0][0]], color='red', marker='o', label='g(1.4) = {:.4f}'.format(y_euler[np.where(x_euler == 1.4)[0][0]]))
+plt.stem(x_euler, y_euler, linefmt='r-', markerfmt='ro', basefmt=' ', label='_nolegend_')  
+highlighted_index = np.where(x_euler == 1.4)[0][0]
+plt.stem(x_euler[highlighted_index], y_euler[highlighted_index], linefmt='g-', markerfmt='go', basefmt=' ', label='_nolegend_')  
+plt.scatter(1.4, y_euler[highlighted_index], color='green', marker='o', label='g(1.4) = {:.4f}'.format(y_euler[highlighted_index]))  
+
+plt.scatter([], [], color='red', label='g(x)', marker='o')
 
 plt.legend()
 
