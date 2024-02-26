@@ -80,33 +80,33 @@ For the initial condition $y = 3$ at $x = 1$, the value of $y$ at $x = 1.4$ obta
     \item Solution of the differential:\\
  Applying the transformation from table \ref{table:ee25-ce48-gate2022} and laplace transform 
     \begin{align}
-             s\mathscr{L}\brak{\phi(x)} - \phi(0) &= 4\brak{\frac{1}{s^2}+\frac{2}{s}}-\mathscr{L}\brak{\phi(x)}\\
-             \mathscr{L}\brak{\phi(x)} &= \frac{3}{s+1} + 4\brak{\frac{1}{s^2\brak{s+1}}+\frac{2}{s\brak{s+1}}}\\
-             &=\frac{-1}{s+1} + \frac{4}{s} + \frac{4}{s^2}
+             s\mathscr{L}\brak{\phi(x)} - \phi(0) &= 4\brak{\frac{1}{s^2}+\frac{3}{s}}-\mathscr{L}\brak{\phi(x)}\\
+             \mathscr{L}\brak{\phi(x)} &= \frac{3}{s+1} + 4\brak{\frac{1}{s^2\brak{s+1}}+\frac{3}{s\brak{s+1}}}\\
+             &=\frac{-5}{s+1} + \frac{8}{s} + \frac{4}{s^2}
     \end{align}
 \item  Inverse Laplace Transform:\\
 Using Bromwich integrals and extension of Jordans lemma :
 \begin{align}
     \phi(t) &= \frac{1}{2\pi j}\int_{c-j\infty}^{c+j\infty}\mathscr{L}\brak{\phi(x)}e^{st}\,dt , c > 0\\
-     &= \frac{1}{2\pi j}\int_{c-j\infty}^{c+j\infty}\brak{\frac{-1}{s+1} + \frac{4}{s} + \frac{4}{s^2}}e^{st}\,dt
+     &= \frac{1}{2\pi j}\int_{c-j\infty}^{c+j\infty}\brak{\frac{-5}{s+1} + \frac{8}{s} + \frac{4}{s^2}}e^{st}\,dt
 \end{align}
 Here, the poles $s=-1$ (non repeated, $m=1$) and $s=0$ (repeated, $m=2$) lie inside a semicircle for some $c>0$. Using method of residues from \ref{table:ee25-ce48-gate2022}:
 \begin{align}
-    R_1 &= \lim\limits_{s\to -1}\brak {{\brak{s+1}}\brak{\frac{-1}{s+1}}e^{st}} \\
-    &= -e^{-t}\\
-   R_2 &= \lim\limits_{s\to 0}\brak {{\brak{s}}\brak{\frac{4}{s}}e^{st}}\\
-   &= 4\\
+    R_1 &= \lim\limits_{s\to -1}\brak {{\brak{s+1}}\brak{\frac{-5}{s+1}}e^{st}} \\
+    &= -5e^{-t}\\
+   R_2 &= \lim\limits_{s\to 0}\brak {{\brak{s}}\brak{\frac{8}{s}}e^{st}}\\
+   &= 8\\
  R_3&=\frac{1}{\brak {1}!}\lim\limits_{s\to 0}\frac{d}{dz}\brak {{(s)}^{2}\brak{\frac{4}{s^2}}e^{st}}\\
  &=4t\\
 \phi(t) &= R_1 + R_2 + R_3\\
-&= -e^{-t} + 4 + 4t
+&= -5e^{-t} + 8 + 4t
 \end{align}
 Reverting to $y(x)$ , we get :
 \begin{align}
-    y(x) &= -e^{-t+1} + 4 + 4\brak{t-1}
+    y(x) &= -5e^{-t+1} + 4 + 4t
 \end{align}
 \end{enumerate}
-Now, approaching to $y(1.4)$ using euler's approximation. Let the approximated function be $g(x)$
+Now, approaching to $y(1.4)$ using euler's approximation from \ref{table:ee25-ce48-gate2022}
 \begin{align}
     g_{\brak{1.2}} &= 3 + \brak{0.2}f'\brak{1,3}\\
     &=4.8\\
