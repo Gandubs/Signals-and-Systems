@@ -64,7 +64,7 @@
 
 Consider the differential equation
 \begin{align}
-    \dv{y}{x} = 4(x+2) - y \notag
+    \frac{dy}{dx} = 4(x+2) - y \notag
 \end{align}
 For the initial condition $y = 3$ at $x = 1$, the value of $y$ at $x = 1.4$ obtained using Euler's method with a step-size of 0.2 is ? (\textit{round off to one decimal place})
 \hfill{(GATE CE 2022)}\\
@@ -74,7 +74,7 @@ For the initial condition $y = 3$ at $x = 1$, the value of $y$ at $x = 1.4$ obta
 
 \textbf{Solutions :}
 %\fi
-    \input{tables/table5.tex}
+\input{tables/table5}
 
 \begin{enumerate}
     \item Solution of the differential:\\
@@ -103,7 +103,7 @@ Here, the poles $s=-1$ (non repeated, $m=1$) and $s=0$ (repeated, $m=2$) lie ins
 \end{align}
 Reverting to $y(x)$ , we get :
 \begin{align}
-    y(x) &= -5e^{-t+1} + 4 + 4t
+    y(x) &= -5e^{-x+1} + 4 + 4x
 \end{align}
 \end{enumerate}
 Now, approaching to $y(1.4)$ using euler's approximation from \ref{table:ee25-ce48-gate2022}
@@ -124,12 +124,8 @@ Now, approaching to $y(1.4)$ using euler's approximation from \ref{table:ee25-ce
 \graphicspath{ {figs/} }
 \includegraphics[width=\columnwidth]{graph_1}
 \caption{ Euler's approximated function vs Original function  }
-\label{graph:ee25-gate2-graph}
+\label{graph:ee25-gate3-graph}
 \end{figure}
-
-
-
-
-
-
 \end{document}
+
+
