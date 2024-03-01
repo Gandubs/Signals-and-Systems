@@ -81,10 +81,7 @@ The stability of the overall system is controlled by tuning the PI control param
     From table \ref{table:ee25-ec48-gate2021}, the characteristic equation is given as:
     \begin{align}
         1+C(s)P(s) &= 0\\
-        1+\brak{K_p+\frac{K_i}{s}}\brak{\frac{2}{s^3+4s^2+5s+2}} &= 0
-    \end{align}
-    Rearranging the terms
-    \begin{align}
+        1+\brak{K_p+\frac{K_i}{s}}\brak{\frac{2}{s^3+4s^2+5s+2}} &= 0\\
         s^4+4s^3+5s^2+(2+2K_p)s+2K_i &=0
     \end{align}
     For the system to be stable, there must be no sign changes in the first coloumn of the routh array for the above equation. From $\ref{table:ee25-ec48-gate2021}$
@@ -103,33 +100,30 @@ The stability of the overall system is controlled by tuning the PI control param
             \frac{\brak{\frac{18-2K_p}{4}}\brak{2 + 2K_p}-8K_i}{\frac{18-2K_p}{4}} &> 0\label{eq:gate 2021 eq:2}\\
         K_i &>0 \label{eq:gate 2021 eq:3}
     \end{align}
-    For marginal stability, one of the above constraints must assume equality, so we assume 3 cases while simultaneously maximising $K_i$ if necessary.
+    For marginal stability, assuming 3 cases while maximising $K_i$ and checking if the above inequalities hold.
     \begin{enumerate}
         \item $K_p=9$\\
-Checking if $\eqref{eq:gate 2021 eq:2}$ and $\eqref{eq:gate 2021 eq:3}$ hold. Limits are introduced to deal with $\eqref{eq:gate 2021 eq:2}$
          \begin{align}
        \brak{\lim_{K_p\to9^-} \frac{\brak{\frac{18-2K_p}{4}}\brak{2 + 2K_p}-8K_i}{\frac{18-2K_p}{4}} > 0} &\cap \brak {K_i > 0}\\
        \brak{\lim_{K_p\to9^-} -8K_i > 0} &\cap \brak{{K_i > 0}}\\
-  \implies K_p=9 \forall K_i &\epsilon (\phi)
+  \implies K_p=9 , \forall K_i &\epsilon (\phi)
     \end{align}
     \item  $K_i=0$\\
-    Checking if $\eqref{eq:gate 2021 eq:1}$ and $\eqref{eq:gate 2021 eq:2}$ hold
     \begin{align}
         \brak{\brak{\frac{18-2K_p}{4}}\brak{2 + 2K_p} > 0}  \cap \brak{K_p < 9}\\
-        \implies K_i=0 \forall K_p \epsilon (-1 , 9)
+        \implies K_i=0 , \forall K_p \epsilon (-1 , 9)
     \end{align}
     \item $\frac{\brak{\frac{18-2K_p}{4}}\brak{2 + 2K_p}-8K_i}{\frac{18-2K_p}{4}} = 0$\\
-        Checking if $\eqref{eq:gate 2021 eq:1}$ and $\eqref{eq:gate 2021 eq:3}$ hold while maximising $K_i$.
         \begin{align}
             \brak{\frac{18-2K_p}{4}}\brak{2 + 2K_p} = 8K_i\\
              -K_p^2 +8K_p + 9 = 8K_i
         \end{align}
-        Since the L.H.S is a downward parabola, and it's vertex ($K_p=4$) satisfies $\eqref{eq:gate 2021 eq:1}$:
+        Vertex ($K_p=4$) satisfies $\eqref{eq:gate 2021 eq:1}$:
         \begin{align}
-            K_i &= 3.125 \forall K_p < 9
+            K_i &= 3.125 \forall (K_p < 9,K_i>0)
         \end{align}
     \end{enumerate}
-    Based on the all the three cases, it is concluded that the maximum value of $K_1$ is $3.125$, $\forall K_p < 9$.
+    Based on the three cases, the maximum value of $K_i$ is $3.125$, $\forall K_p < 9$.
    
     
 \end{document}
