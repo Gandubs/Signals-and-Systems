@@ -82,9 +82,9 @@ The stability of the overall system is controlled by tuning the PI control param
     \begin{align}
         1+C(s)P(s) &= 0\\
         1+\brak{K_p+\frac{K_i}{s}}\brak{\frac{2}{s^3+4s^2+5s+2}} &= 0\\
-        s^4+4s^3+5s^2+(2+2K_p)s+2K_i &=0
+        s^4+4s^3+5s^2+(2+2K_p)s+2K_i &=0 \label{eq:gate 2021 eq:4}
     \end{align}
-    For the system to be stable, there must be no sign changes in the first coloumn of the routh array for the above equation. From $\ref{table:ee25-ec48-gate2021}$
+    For the system to be stable, there must be no sign changes in the first column of the routh array for the above equation. From $\eqref{eq:gate 2021 eq:4}$
     \begin{align}
     \begin{array}{c|cccc}
         s^4 & 1 & 5 & 2K_i \\
