@@ -120,10 +120,35 @@ The stability of the overall system is controlled by tuning the PI control param
         \end{align}
         Vertex ($K_p=4$) satisfies $\eqref{eq:gate 2021 eq:1}$:
         \begin{align}
-            K_i &= 3.125 \forall (K_p < 9,K_i>0)
+            K_i &= 3.125 \forall (K_p = 4 ,K_i>0)
         \end{align}
     \end{enumerate}
-    Based on the three cases, the maximum value of $K_i$ is $3.125$, $\forall K_p < 9$.
+
+\begin{figure}[!ht]    
+    \centering
+\graphicspath{ {figs/} }
+\includegraphics[width=\columnwidth]{graph_1}
+\label{figure:ee25-gate4-graph1}
+\caption{Location of roots for $k_i=0$,$k_p=-1$}
+\end{figure}
+
+\begin{figure}[!ht]    
+    \centering
+\graphicspath{ {figs/} }
+\includegraphics[width=\columnwidth]{graph_2}
+\caption{Location of roots for $k_i=0$,$k_p=9$}
+\label{figure:ee25-gate4-graph2}
+\end{figure}
+
+\begin{figure}[!ht]    
+    \centering
+\graphicspath{ {figs/} }
+\includegraphics[width=\columnwidth]{graph_3}
+\caption{Location of roots for $k_i=3.125$,$k_p=4$}
+\label{figure:ee25-gate4-graph3}
+\end{figure}
+ 
+    Based on the three cases for marginal stability, the maximum value of $K_i$ is $3.125$, for $K_p = 4$.
    
     
 \end{document}
