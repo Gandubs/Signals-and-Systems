@@ -64,7 +64,7 @@
 \label{input}
 \item Download the sound file used for this code from the below link
 \begin{lstlisting}
-link here
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/Ananth-singing.wav
 \end{lstlisting}
 \item 
 \label{Python_code_for_filtering}
@@ -111,11 +111,11 @@ Sketch $y(n)$.\\
 Solve\\
 \solution  The below C code computes the values of $y(n)$ till $n=20$ 
 \begin{lstlisting}
-link
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/2.2.c
 \end{lstlisting} 
 The following code plots x[n] and $y[n]$
 \begin{lstlisting}
-link
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/2.2.py
 \end{lstlisting}
 
 \begin{figure}[H]
@@ -231,7 +231,7 @@ known as the {\em Discrete Time Fourier Transform} (DTFT) of $x(n)$.
 \\
 \solution The below code plots $|H(e^{j\omega})|$.
 \begin{lstlisting}
-link
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/3.5.py
 \end{lstlisting}
 Substituting $z = e^{j\omega}$ in \eqref{eq:freq_resp}, we get
 \begin{align}
@@ -277,7 +277,7 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 \\
 \solution The following code plots $h(n)$ 
 \begin{lstlisting}
-link
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/4.2.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -310,7 +310,7 @@ Below is the plot of $h(n)$ using the difference equations.
 \ref{fig:hn}. 
 
 \begin{lstlisting}
-link 4.2.py
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/4.4.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
@@ -334,7 +334,7 @@ Comment. The operation in \eqref{eq:convolution} is known as
 \ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-link
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/4.5.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -378,13 +378,13 @@ y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n
 
 \solution The above three questions are solved using the following code :
 \begin{lstlisting}
-link 5_sol.py
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/5_sol.py
 \end{lstlisting}
 
 \item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and IFFT.
 \solution The solution of this question can be found in the code below.
 \begin{lstlisting}
-link 5.4.py   
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/5.4.py
 \end{lstlisting}
 This code verifies the result by plotting the obtained result with the result obtained previously.
 \begin{figure}[H]
@@ -431,8 +431,7 @@ where the $\odot$ represents the Hadamard product which performs element-wise mu
 
 The below code computes $y\brak{n}$ by DFT Matrix and then plots it.
 \begin{lstlisting}
-link 5.5.py
-\end{lstlisting}
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/5.5.py\end{lstlisting}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{figs/yn_DFT_matrix.png}
@@ -463,7 +462,7 @@ where the input signal is $x(n)$ and the output signal is $y(n)$ with initial va
 
 \solution The below code gives the output of an Audio Filter without using the built in function signal.lfilter(Slightly modified audio file here).
 \begin{lstlisting}
-link 6.1.py 
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/6.1.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -517,7 +516,7 @@ h(n) &= \sum_{i}r(i)[p(i)]^nu(n) + \sum_{j}k(j)\delta(n - j)
 \end{align}
 The below code computes the values of $r\brak{i},p\brak{i} , k\brak{i}$ and plots $h\brak{n}$
 \begin{lstlisting}
-link 6.2.py
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/6.2.py
 \end{lstlisting}
 \input{tables/audio_filter_tab}
 
@@ -530,7 +529,7 @@ H(1)&= \sum_{n = 0}^{\infty}h(n)  = \frac{\sum_{k = 0}^{N}b(k)}{\sum_{k = 0}^{M}
 As both $a\brak{k}$ and $b\brak{k}$ are finite length sequences they converge.\\
 The below code plots Filter frequency response
 \begin{lstlisting}
-link 6_filter_response.py
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/6_filter_response.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -543,7 +542,7 @@ The below code plots the Butterworth Filter in analog domain by using bilinear t
     z=\frac{1+sT/2}{1-sT/2}
 \end{align}
 \begin{lstlisting}
-link analog_filt.py
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/analog_filt.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -556,7 +555,7 @@ link analog_filt.py
 
 The below code plots the Pole-Zero Plot of the frequency response.
 \begin{lstlisting}
-link pole zero
+https://github.com/Gandubs/Signals-and-Systems/blob/master/audio%20filter/codes/6.2_pole-zero.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -584,9 +583,7 @@ Modify the code with different input parameters and get the best possible output
 
 \solution
 A better filtering was found on setting the order of the filter to be 5.
-
 \end{enumerate}
-
 
 \end{document}
 

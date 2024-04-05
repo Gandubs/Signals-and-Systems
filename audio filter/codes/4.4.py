@@ -1,15 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-n = np.arange(10)
-fn=(-1/2)**n
+k = 12
+h = np.zeros(k)
+h[0] = 1
+h[1] = -0.5*h[0]
+h[2] = -0.5*h[1] + 1
 
-hn1=np.pad(fn, (0,2), 'constant', constant_values=(0))
-hn2=np.pad(fn, (2,0), 'constant', constant_values=(0))
-plt.stem(np.arange(12), hn1+hn2)
-plt.title('Filter Impulse Response')
+for n in range(3,k-1):
+		h[n] = -0.5*h[n-1]
+
+#subplots
+plt.stem(range(0,k),h)
+plt.title('Impulse Response Definition')
 plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid()
 
-plt.show()
+plt.savefig('hndef.png')
