@@ -34,8 +34,7 @@
 \maketitle
 %-------------------------------------------------------------------------------
 \section{Introduction}
-We are supposed to design the equivalent FIR and IIR filter realizations for given filter number.  
-This is a bandpass filter whose specifications are available below.
+We need to create both FIR and IIR filter designs for a specified filter type. Specifically, we're tasked with developing a bandpass filter, and we have the specifications for this filter.
 
 \section{Filter Specifications}
 \subsection{The Digital Filter}
@@ -52,11 +51,9 @@ where $\sigma$ is sum of digits of roll number and $r$ is roll number.\\
     \sigma  &= 9\\
     j&=7
 \end{align}
- substituting $j =7$ gives the passband
-range for our bandpass filter as $8.2$ kHz - $9.4$ kHz.  Hence, the un-normalized discrete time filter
-passband frequencies are $F_{p1} = 8.2$ kHz
-and $F_{p2} = 9.4$ kHz. \\
-The corresponding normalized digital filter passband frequencies are
+When substituting $j = 7$, the passband range for our bandpass filter spans from $8.2$ kHz to $9.4$ kHz.\\
+Therefore, the un-normalized discrete-time filter passband frequencies are $F_{p1} = 8.2$ kHz and $F_{p2} = 9.4$ kHz.\\
+The corresponding normalized digital filter passband frequencies would be:
 \begin{align}
     \omega_{p1} &= 2\pi\frac{F_{p1}}{F_s} = 0.34 \pi\\
     \omega_{p2} &= 2\pi\frac{F_{p2}}{F_s}  =0.39 \pi
@@ -77,7 +74,7 @@ be equal, so we let $\delta_1 = \delta_2 = \delta = 0.15$.
 \end{align}
 \end{enumerate}
 \subsection{The Analog filter}
-In the bilinear transform, the analog filter frequency ($\Omega$) is related to the corresponding digital filter frequency\brak{\omega} :
+In the bilinear transform, the relationship between the analog filter frequency ($\Omega$) and the corresponding digital filter frequency ($\omega$) is given by:
 \begin{align}
   \Omega = \tan \frac{\omega}{2}  
 \end{align}
@@ -86,12 +83,11 @@ $\Omega_{p1} = 0.5913$, $\Omega_{p2} = 0.702$ and $\Omega_{s1} = 0.5662$, $\Omeg
 respectively.
 
 \section{The IIR Filter Design}
-We are supposed to design filters whose stopband is monotonic and passband equiripple.  
-Hence, we use the Chebyschev approximation to design our bandpass IIR filter.
+To ensure a monotonic stopband and an equiripple passband, we opt to design our bandpass IIR filter using the Chebyshev approximation method.
 \subsection{The Analog Filter}
 \begin{enumerate}
 
-\item {Low Pass Filter Specifications:}  Let $H_{a, BP}(j\Omega)$ be the desired analog bandpass filter,  with the specifications provided in Section 2.2, and $H_{a,LP}(j\Omega_L)$ be the equivalent low pass filter, then
+\item {Low Pass Filter Specifications:}  If we denote $H_{a, BP}(j\Omega)$ as the desired analog bandpass filter with the specifications outlined in Section 2.2, and $H_{a,LP}(j\Omega_L)$ as the equivalent low-pass filter, 
 \begin{equation}
 \Omega_L = \frac{\Omega^2 - \Omega_0^2}{B\Omega} \label{eq:freq_transform}
 \end{equation}
@@ -125,7 +121,7 @@ There exists a recurssive relation from which all the polynomials can be found o
 \begin{align}
     c_{N+2} &= 2xc_{N+1} - c_{N}  \label{eq:cheby_poly_relation}
 \end{align}
-Imposing the band restrictions on \eqref{eq:mag_freq_response} \\
+Applying the band restrictions on \eqref{eq:mag_freq_response} \\
 \begin{align}
     \vert H_{a,LP}(j\Omega_L)\vert^2 < \delta_{2} \hspace{5pt} \text{for}\hspace{5pt} \Omega_L = \Omega_{Ls}\\
     1-\delta_{1}<\vert H_{a,LP}(j\Omega_L)\vert^2 < 1 \hspace{5pt} \text{for}\hspace{5pt} \Omega_L = \Omega_{Lp}\\
@@ -136,7 +132,7 @@ we obtain :
 \frac{\sqrt{D_2}}{c_N(\Omega_{Ls})} \leq \epsilon \leq \sqrt{D_1}, \nonumber \\
 N \geq \left\lceil \frac{\cosh^{-1}\sqrt{D_2/D_1}}{\cosh^{-1}\Omega_{Ls}} \right\rceil,
 \end{eqnarray}
-where $D_1 = \frac{1}{(1 - \delta)^2}-1$ and $D_2 = \frac{1}{\delta^2} - 1$ and $\left \lceil . \right \rceil$ is known as the ceiling operator . 
+Where $D_1 = \frac{1}{(1 - \delta)^2}-1$ and $D_2 = \frac{1}{\delta^2} - 1$ and $\left \lceil . \right \rceil$ is known as the ceiling function . 
 \input{tables/filter_design_tab}
 we get $N\geq 4$ and $0.278 \leq \epsilon \leq 0.61$\\
 \newpage
@@ -151,9 +147,9 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/plot1.
 \label{fig:H_for_diff_eb}
 \end{figure}
 
-In \figref{fig:H_for_diff_eb} we can observe the equiripple behaviour in passband and monotonic behaviour in stopband. As the value of $\epsilon$ increases the value of $\vert H_{a,LP}(j\Omega_L)\vert$ decreases.\\
+In Figure 1 ($\figref{fig:H_for_diff_eb}$), we can observe the equiripple behavior in the passband and the monotonic behavior in the stopband. As the value of $\epsilon$ increases, the magnitude of $|H_{a,LP}(j\Omega_L)|$ decreases.\\
 
-\item {The Low Pass Chebyschev Filter:} The next step in design is to find an expression for magnitude response in $s$ domain. 
+\item {The Low Pass Chebyschev Filter:} The subsequent step in the design process involves deriving an expression for the magnitude response in the s-domain.
 
 Using $s=j\Omega$ or in this case $s_{L}=j\Omega_{L}$ we obtain:
 \begin{align}
@@ -191,8 +187,8 @@ https://github.com/dhanushnayakh03/EE1205/blob/main/Filter_Design/codes/plot1.py
 \caption{The Pole zero plot and all the poles lie on an ellipse. The left and right poles have been identified as shown.}
 \label{fig:pole_zero_plt}
 \end{figure}
-The poles in the left half of the plane are considered in the design as we intend to design a stable system.\\
-Therefore the magnitude response is written as :- 
+The poles in the left half of the plane are considered in the design as we need to design a stable system.\\
+Therefore the magnitude response is  :- 
 \begin{align}
     H_{a,LP}(s_L) &= \frac{G_{LP}}{\brak{s_L-s_5}\brak{s_L-s_6}\brak{s_L-s_7}\brak{s_L-s_8}}
 \end{align}
@@ -215,7 +211,7 @@ Substituting respective values in \eqref{eq:Gain_eq_LP} we get $G_{LP}=0.4166$
 \end{figure}
 
 \item {The Band Pass Chebyschev Filter:} 
-After verifying design with the required specifications the next step in design is to jump to required type of filter using frequency transformation. 
+Once we've confirmed that the design meets the specified requirements, the next step is to transition to the desired type of filter using frequency transformation.
 \begin{align}
     s_L &= \frac{s^2 + \Omega_0^2}{Bs} \\
     H_{a,BP}(s) &= G_{BP}H_{a,LP}(s_L)\vert_{s_L = \frac{s^2 + \Omega_0^2}{Bs}},
@@ -235,10 +231,9 @@ Thus the response in s domain
 \begin{align}
     H_{a,BP}\brak{s} &= \frac{6.49\times 10^{-5}s^4}{s^8 + 0.144s^7 + 0.1682s^6 + 0.1810s^5 + 1.05s^4 + 0.750s^3 + 0.289s^2 + 0.0102s + 0.029} \label{eq:magnitude_bandpass_sdom}
 \end{align}
-The expressions in the s-domain and gain factors are computed by writing a Python code. \\
-In Figure 3, we plot $\vert H_{a,BP}(j\Omega)\vert$ as a function of $\Omega$ for both positve as
-well as negative frequencies.  We find that the passband and stopband frequencies in the figure
-match well with those obtained analytically through the bilinear transformation.
+The expressions in the s-domain and gain factors can be computed by writing a Python code. In Figure 3, we plot $|H_{a,BP}(j\Omega)|$ as a function of $\Omega$ for both positive and negative frequencies.\\
+We observe that the passband and stopband frequencies in the figure closely match those obtained analytically through the bilinear transformation.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\columnwidth]{figs/Band_Pass_Filter.png}
@@ -266,9 +261,7 @@ where $G=6.49\times 10^{-5}$
 \end{figure}
 
 \section{The FIR Filter}
-We design the FIR filter by first obtaining the (non-causal) lowpass equivalent using the Kaiser window
-and then
-converting it to a causal bandpass filter.
+To design the FIR filter, we begin by obtaining the (non-causal) lowpass equivalent using the Kaiser window. Subsequently, we convert it to a causal bandpass filter.
 \subsection{The Equivalent Lowpass Filter}
 The lowpass filter has a passband frequency $\omega_l$ and transition band $\Delta \omega = 2\pi \frac{\Delta F}{F_s} = 0.0125\pi$.
 The stopband tolerance is $\delta=0.15$.The cutoff-frequency is given by :
@@ -291,9 +284,10 @@ The impulse response of ideal Low Pass Filter is given by :
     \frac{\sin(w_l n)}{n\pi}, & \text{if } n \neq 0
 \end{cases} \label{eq:h(n)_for_LPF}
 \end{align}
-From \eqref{eq:h(n)_for_LPF} we conclude that $h\brak{n}$ for an ideal Low Pass Filter is not causal and can neither be made causal by introducing a finite delay. And $h\brak{n}$ do not converge and hence the system is unstable.
-\subsection{The Kaiser Window}
-Therefore we move on windowing the impulse response.A window function is chosen and multiplied. The Kaiser window is defined as
+From equation \eqref{eq:h(n)_for_LPF}, we conclude that $h(n)$ for an ideal Low Pass Filter is not causal and cannot be made causal by introducing a finite delay. Additionally, $h(n)$ does not converge, resulting in an unstable system.\\
+
+To address this, we move on to windowing the impulse response. A window function is chosen and multiplied to make the filter causal and stable. One such window function is the Kaiser window, defined as:
+
 \begin{align}
     w(n) =
     \begin{cases}
@@ -347,7 +341,7 @@ Therefore the desired impulse response is :
 \end{figure}
 
 \subsection{The Equivalent Band Pass Filter}
-A Band-Pass Filter (BPF) can be obtained by subtracting the magnitude response of a Low-Pass Filter (LPF) with cutoff frequency $\omega_{p1}$ from another LPF magnitude response with cutoff frequency $\omega_{p2}$.
+A Band-Pass Filter (BPF) can be derived by subtracting the magnitude response of a Low-Pass Filter (LPF) with cutoff frequency $\omega_{p1}$ from another LPF magnitude response with cutoff frequency $\omega_{p2}$.
 
 \begin{align}
     h_{BP}\brak{n} = 
